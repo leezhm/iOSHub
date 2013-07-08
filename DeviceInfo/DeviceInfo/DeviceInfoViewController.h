@@ -10,7 +10,14 @@
 
 @interface DeviceInfoViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UILabel *showDevInfo;
+@property (weak, nonatomic) IBOutlet UILabel *devInternational;
+@property (weak, nonatomic) IBOutlet UILabel *devSystemModel;
+@property (weak, nonatomic) IBOutlet UILabel *devSystemVersion;
+@property (weak, nonatomic) IBOutlet UILabel *devSystemName;
+@property (weak, nonatomic) IBOutlet UILabel *devNickName;
+@property (weak, nonatomic) IBOutlet UILabel *devID;
+
+@property (weak, nonatomic) IBOutlet UILabel *devTitle;
 
 //
 - (void) enumDeviceInfo;

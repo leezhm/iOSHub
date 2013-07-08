@@ -30,12 +30,25 @@
 
 - (void) enumDeviceInfo
 {
-    NSString * devInfo = @"Created by Jerry.li on 8th July, 2013 \n";
+    self.devTitle.text = @"Created by Jerry.li on 8th July, 2013 \n";
     
-    // Name
-    devInfo = [devInfo stringByAppendingString:[[UIDevice currentDevice] systemVersion]];
+    // ID
+    self.devID.text = [[UIDevice currentDevice] uniqueIdentifier];
     
-    self.showDevInfo.text = devInfo;
+    // Nick Name
+    self.devNickName.text = [[UIDevice currentDevice] name];
+    
+    // system name
+    self.devSystemName.text = [[UIDevice currentDevice] systemName];
+    
+    // system version
+    self.devSystemVersion.text = [[UIDevice currentDevice] systemVersion];
+    
+    // system model
+    self.devSystemModel.text = [[UIDevice currentDevice] model];
+    
+    // international
+    self.devInternational.text = [[UIDevice currentDevice] localizedModel];
 }
 
 @end
