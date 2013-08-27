@@ -18,6 +18,18 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    // set the background
+    [self.view setBackgroundColor:[UIColor redColor]];
+    
+    // create another new view
+    CGRect rect = CGRectMake(40, 20, 200, 400);
+    
+    UIView * newView = [[UIView alloc] initWithFrame:rect];
+    [newView setBackgroundColor:[UIColor brownColor]];
+    
+    // add this new sub-view to main-view
+    [self.view addSubview:newView];
 }
 
 - (void)didReceiveMemoryWarning
