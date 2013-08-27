@@ -12,4 +12,6 @@
 
 @property (copy, nonatomic) NSString *userName;
 
+@property (weak, nonatomic) IBOutlet UILabel *labelText;
+
 @end

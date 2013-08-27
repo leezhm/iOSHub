@@ -58,4 +58,9 @@
     return YES;
 }
 
+- (IBAction)OnTouchUpInsideEvent:(UIButton *)sender {
+    
+    self.labelText.text = @"http://itercast.com/lecture/171 iOS开发";
+}
+
 @end

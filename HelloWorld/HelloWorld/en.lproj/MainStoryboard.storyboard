@@ -45,33 +45,67 @@
                                     <outlet property="delegate" destination="2" id="mAY-GA-YVW"/>
                                 </connections>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CZ0-dF-fYX">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="174" id="iJQ-KG-tph"/>
+                                    <constraint firstAttribute="height" constant="51" id="jfk-cv-JVd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="操作测试">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="OnTouchUpInsideEvent:" destination="2" eventType="touchUpInside" id="mJj-dQ-pBZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1bR-dp-4li">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="245" id="Aju-lt-kNJ"/>
+                                    <constraint firstAttribute="height" constant="74" id="Lpy-jr-rXS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.85610566485489625" blue="0.56565837553874521" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="CZ0-dF-fYX" secondAttribute="bottom" constant="13" id="0Dz-lq-Y7A"/>
                             <constraint firstItem="gto-1I-eYP" firstAttribute="leading" secondItem="lNC-zc-u8E" secondAttribute="leading" type="default" id="167-7u-UtS"/>
+                            <constraint firstItem="1bR-dp-4li" firstAttribute="centerX" secondItem="CZ0-dF-fYX" secondAttribute="centerX" type="default" id="3t5-B1-bct"/>
+                            <constraint firstItem="CZ0-dF-fYX" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="9l5-Zo-riK"/>
                             <constraint firstItem="gto-1I-eYP" firstAttribute="trailing" secondItem="lNC-zc-u8E" secondAttribute="trailing" type="default" id="EKd-R1-CW6"/>
-                            <constraint firstAttribute="bottom" secondItem="3BB-Or-m81" secondAttribute="bottom" constant="62" id="eMi-t0-KGG"/>
+                            <constraint firstAttribute="bottom" secondItem="1bR-dp-4li" secondAttribute="bottom" constant="84" id="Ezf-JN-4XL"/>
+                            <constraint firstItem="lNC-zc-u8E" firstAttribute="top" secondItem="3" secondAttribute="top" constant="143" id="MjC-eS-G9N"/>
+                            <constraint firstAttribute="bottom" secondItem="3BB-Or-m81" secondAttribute="bottom" constant="228" id="Pqy-zC-XPg"/>
+                            <constraint firstItem="3BB-Or-m81" firstAttribute="centerX" secondItem="lNC-zc-u8E" secondAttribute="centerX" type="default" id="SrP-br-IZX"/>
                             <constraint firstItem="gto-1I-eYP" firstAttribute="top" secondItem="3" secondAttribute="top" constant="61" id="ehQ-fn-fuD"/>
-                            <constraint firstItem="lNC-zc-u8E" firstAttribute="top" secondItem="3" secondAttribute="top" constant="263" id="fl5-vC-6rm"/>
-                            <constraint firstItem="3BB-Or-m81" firstAttribute="centerX" secondItem="lNC-zc-u8E" secondAttribute="centerX" type="default" id="fs4-2H-diK"/>
-                            <constraint firstItem="lNC-zc-u8E" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="jsL-Kg-m49"/>
+                            <constraint firstItem="1bR-dp-4li" firstAttribute="centerX" secondItem="3BB-Or-m81" secondAttribute="centerX" type="default" id="ey9-qJ-doW"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="label" destination="lNC-zc-u8E" id="XGO-Cv-NSg"/>
+                        <outlet property="labelText" destination="1bR-dp-4li" id="R7N-Ck-JbI"/>
                         <outlet property="textField" destination="gto-1I-eYP" id="ZA4-2u-ofZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-181" y="189"/>
         </scene>
     </scenes>
     <classes>
         <class className="HelloWorldViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/HelloWorldViewController.h"/>
             <relationships>
+                <relationship kind="action" name="OnTouchUpInsideEvent:" candidateClass="UIButton"/>
                 <relationship kind="action" name="changeGreeting:"/>
                 <relationship kind="outlet" name="label" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelText" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="textField" candidateClass="UITextField"/>
             </relationships>
         </class>
