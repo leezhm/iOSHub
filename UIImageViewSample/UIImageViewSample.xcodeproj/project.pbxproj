@@ -18,6 +18,7 @@
 		7FD2A39117CCF8F7005A686B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FD2A39017CCF8F7005A686B /* Default-568h@2x.png */; };
 		7FD2A39417CCF8F7005A686B /* UIImageViewSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD2A39317CCF8F7005A686B /* UIImageViewSampleViewController.m */; };
 		7FD2A39717CCF8F7005A686B /* UIImageViewSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FD2A39517CCF8F7005A686B /* UIImageViewSampleViewController.xib */; };
+		7FD2A39E17CD0AAB005A686B /* Resource in Resources */ = {isa = PBXBuildFile; fileRef = 7FD2A39D17CD0AAB005A686B /* Resource */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		7FD2A39217CCF8F7005A686B /* UIImageViewSampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIImageViewSampleViewController.h; sourceTree = "<group>"; };
 		7FD2A39317CCF8F7005A686B /* UIImageViewSampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIImageViewSampleViewController.m; sourceTree = "<group>"; };
 		7FD2A39617CCF8F7005A686B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/UIImageViewSampleViewController.xib; sourceTree = "<group>"; };
+		7FD2A39D17CD0AAB005A686B /* Resource */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Resource; path = UIImageViewSample/Resource; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		7FD2A36E17CCF8F7005A686B = {
 			isa = PBXGroup;
 			children = (
+				7FD2A39D17CD0AAB005A686B /* Resource */,
 				7FD2A38017CCF8F7005A686B /* UIImageViewSample */,
 				7FD2A37917CCF8F7005A686B /* Frameworks */,
 				7FD2A37817CCF8F7005A686B /* Products */,
@@ -164,6 +167,7 @@
 				7FD2A38F17CCF8F7005A686B /* Default@2x.png in Resources */,
 				7FD2A39117CCF8F7005A686B /* Default-568h@2x.png in Resources */,
 				7FD2A39717CCF8F7005A686B /* UIImageViewSampleViewController.xib in Resources */,
+				7FD2A39E17CD0AAB005A686B /* Resource in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
