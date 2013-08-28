@@ -42,11 +42,13 @@
     // Can Editing
     [self.imgPicker setAllowsEditing:YES];
     
-    // show the custom UI with CameraOverlayView
-    
-    
     // set the source
     [self.imgPicker setSourceType:UIImagePickerControllerSourceTypeCamera];
+    
+    // show the custom UI with CameraOverlayView
+    [self.imgPicker setShowsCameraControls:NO];
+    
+    
     [self presentViewController:self.imgPicker animated:YES completion:nil];
 }
 
