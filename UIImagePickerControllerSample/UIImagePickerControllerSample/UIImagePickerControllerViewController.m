@@ -9,7 +9,6 @@
 #import "UIImagePickerControllerViewController.h"
 
 @interface UIImagePickerControllerViewController ()
-
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @end
@@ -30,7 +29,11 @@
 
 - (IBAction)onTakeAPhotoTouchUpInsideEvent:(UIButton *)sender
 {
+    UIImagePickerController * ipc = [[UIImagePickerController alloc] init];
     
+    // set the source
+    [ipc setSourceType:UIImagePickerControllerSourceTypeCamera];
+    [self presentViewController:ipc animated:YES completion:nil];
 }
 
 @end
