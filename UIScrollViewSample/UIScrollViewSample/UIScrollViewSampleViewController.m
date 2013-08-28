@@ -18,6 +18,16 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    // create an UIScrollView and init it
+    UIScrollView * scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(10, 10, 300, 400)];
+    [scrollView setBackgroundColor:[UIColor purpleColor]];
+    [scrollView setContentSize:CGSizeMake(300, 1200)];
+    
+    [scrollView setContentSize:<#(CGSize)#>]
+    
+    // add scroll view
+    [self.view addSubview:scrollView];
 }
 
 - (void)didReceiveMemoryWarning
