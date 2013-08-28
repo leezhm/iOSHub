@@ -62,6 +62,9 @@
     // set cameraController with camera overlay view
     [self.imgPicker setCameraOverlayView:cameraController];
     
+    // turn on the flash
+    [self.imgPicker setCameraFlashMode:UIImagePickerControllerCameraFlashModeOn];
+    
     [self presentViewController:self.imgPicker animated:YES completion:nil];
 }
 
