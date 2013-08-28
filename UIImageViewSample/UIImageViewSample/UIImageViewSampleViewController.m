@@ -21,10 +21,13 @@
     
     // create a UIImageView
     UIImage * img = [UIImage imageNamed:@"Resource/magic"];
+    
     NSLog(@"image width:%f and height:%f", [img size].width, [img size].height);
+    NSLog(@"Main View Center x:%f and y:%f", [self.view center].x, [self.view center].y);
+    NSLog(@"Main View width:%f and height:%f", [self.view bounds].size.width, [self.view bounds].size.height);
     
     UIImageView * imgView = [[UIImageView alloc] initWithImage:img];
-    [imgView setFrame:CGRectMake(0, 0, [img size].width, [img size].height)];
+    [imgView setFrame:CGRectMake(0, 0, [self.view bounds].size.width, [self.view bounds].size.height)];
     [imgView setBackgroundColor:[UIColor redColor]];
     
     // add sub-view
