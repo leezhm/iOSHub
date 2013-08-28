@@ -34,26 +34,35 @@
 //    [self.view addSubview:imgView];
     
     
-    // UIImage Animation
-    UIImageView * AnimationView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, [self.view bounds].size.width, [self.view bounds].size.height)];
+//    // UIImage Animation
+//    UIImageView * AnimationView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, [self.view bounds].size.width, [self.view bounds].size.height)];
+//    
+//    NSMutableArray * muArray = [[NSMutableArray alloc] initWithCapacity:80];
+//    
+//    for (int i = 1; i <= 80; ++ i) {
+//        
+//        NSString * file = [NSString stringWithFormat:@"Resource/CompleteAnimation/%i", i];
+//        
+//        //NSLog(@"%@", file);
+//        
+//        [muArray addObject:[UIImage imageNamed:file]];
+//    }
+//    
+//    [AnimationView setAnimationImages:muArray];
+//    [AnimationView setAnimationDuration:3.0];
+//    
+//    [self.view addSubview:AnimationView];
+//    
+//    [AnimationView startAnimating];
     
-    NSMutableArray * muArray = [[NSMutableArray alloc] initWithCapacity:80];
     
-    for (int i = 1; i <= 80; ++ i) {
-        
-        NSString * file = [NSString stringWithFormat:@"Resource/CompleteAnimation/%i", i];
-        
-        //NSLog(@"%@", file);
-        
-        [muArray addObject:[UIImage imageNamed:file]];
-    }
+    UIImageView *hpView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Resource/homePage"]];
     
-    [AnimationView setAnimationImages:muArray];
-    [AnimationView setAnimationDuration:3.0];
+    //NSLog(@"width:%f and height:%f", )
     
-    [self.view addSubview:AnimationView];
+    [hpView setFrame:CGRectMake(0, 0, [self.view bounds].size.width, [self.view bounds].size.height)];
     
-    [AnimationView startAnimating];
+    [self.view addSubview:hpView];
 }
 
 - (void)didReceiveMemoryWarning
