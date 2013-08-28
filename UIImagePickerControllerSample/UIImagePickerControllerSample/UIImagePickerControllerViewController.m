@@ -9,7 +9,10 @@
 #import "UIImagePickerControllerViewController.h"
 
 @interface UIImagePickerControllerViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+
+@property (weak, nonatomic) IBOutlet UIImageView *imgView;
+
+@property (strong, nonatomic) UIImagePickerController * imgPicker;
 
 @end
 
@@ -29,17 +32,22 @@
 
 - (IBAction)onTakeAPhotoTouchUpInsideEvent:(UIButton *)sender
 {
-    UIImagePickerController * ipc = [[UIImagePickerController alloc] init];
+    self.imgPicker = [[UIImagePickerController alloc] init];
+    
+    //self.imgPicker = ipc;
     
     // delegate
-    ipc.delegate = self;
+    self.imgPicker.delegate = self;
     
     // Can Editing
-    [ipc setAllowsEditing:YES];
+    [self.imgPicker setAllowsEditing:YES];
+    
+    // show the custom UI with CameraOverlayView
+    
     
     // set the source
-    [ipc setSourceType:UIImagePickerControllerSourceTypeCamera];
-    [self presentViewController:ipc animated:YES completion:nil];
+    [self.imgPicker setSourceType:UIImagePickerControllerSourceTypeCamera];
+    [self presentViewController:self.imgPicker animated:YES completion:nil];
 }
 
 - (void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
@@ -54,7 +62,7 @@
     NSLog(@"image URL : %@", info[UIImagePickerControllerMediaURL]);
     NSLog(@"image ref URL : %@", info[UIImagePickerControllerReferenceURL]);
     
-    [self.imageView setImage:img];
+    [self.imgView setImage:img];
 }
 
 @end
