@@ -34,8 +34,6 @@
 {
     self.imgPicker = [[UIImagePickerController alloc] init];
     
-    //self.imgPicker = ipc;
-    
     // delegate
     self.imgPicker.delegate = self;
     
@@ -48,8 +46,29 @@
     // show the custom UI with CameraOverlayView
     [self.imgPicker setShowsCameraControls:NO];
     
+    // custom camera controller
+    UIView * cameraController = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    UIButton * takingPhoto = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [takingPhoto setTitle:@"Take a photo" forState:UIControlStateNormal];
+    
+    // set the action function
+    [takingPhoto addTarget:self action:@selector(onTakingAPhotoEvent) forControlEvents:UIControlEventTouchUpInside];
+    
+    // add button to cameraController
+    [takingPhoto setFrame:CGRectMake(0, 0, 120, 60)];
+    [cameraController addSubview:takingPhoto];
+    
+    // set cameraController with camera overlay view
+    [self.imgPicker setCameraOverlayView:cameraController];
     
     [self presentViewController:self.imgPicker animated:YES completion:nil];
+}
+
+- (void) onTakingAPhotoEvent
+{
+    // taking a photo
+    [self.imgPicker takePicture];
 }
 
 - (void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
@@ -58,7 +77,7 @@
     [picker dismissViewControllerAnimated:YES completion:nil];
     
     // get the picture
-    UIImage * img = info[UIImagePickerControllerEditedImage];
+    UIImage * img = info[UIImagePickerControllerOriginalImage]; // Be careful, EditingImage or OriginalImage
     
     NSLog(@"image type : %@", info[UIImagePickerControllerMediaType]);
     NSLog(@"image URL : %@", info[UIImagePickerControllerMediaURL]);
