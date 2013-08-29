@@ -37,11 +37,11 @@
     // UIImage Animation
     UIImageView * AnimationView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, [self.view bounds].size.width, [self.view bounds].size.height)];
     
-    NSMutableArray * muArray = [[NSMutableArray alloc] initWithCapacity:80];
+    NSMutableArray * muArray = [[NSMutableArray alloc] initWithCapacity:125];
     
-    for (int i = 1; i <= 80; ++ i) {
+    for (int i = 1; i <= 125; ++ i) {
         
-        NSString * file = [NSString stringWithFormat:@"Resource/CompleteAnimation/%i", i];
+        NSString * file = [NSString stringWithFormat:@"Resource/QiongFlower/%i", i];
         
         //NSLog(@"%@", file);
         
@@ -49,7 +49,7 @@
     }
     
     [AnimationView setAnimationImages:muArray];
-    [AnimationView setAnimationDuration:3.0];
+    [AnimationView setAnimationDuration:2.0];
     
     [self.view addSubview:AnimationView];
     
