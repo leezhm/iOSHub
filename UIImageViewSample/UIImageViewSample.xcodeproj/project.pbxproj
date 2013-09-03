@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37126AAC17CF83F2001918A7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37126AAB17CF83F2001918A7 /* AudioToolbox.framework */; };
+		37126AAE17CF89E5001918A7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37126AAD17CF89E5001918A7 /* AVFoundation.framework */; };
 		7FD2A37B17CCF8F7005A686B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD2A37A17CCF8F7005A686B /* UIKit.framework */; };
 		7FD2A37D17CCF8F7005A686B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD2A37C17CCF8F7005A686B /* Foundation.framework */; };
 		7FD2A37F17CCF8F7005A686B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD2A37E17CCF8F7005A686B /* CoreGraphics.framework */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		37126AAB17CF83F2001918A7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		37126AAD17CF89E5001918A7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		7FD2A37717CCF8F7005A686B /* UIImageViewSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIImageViewSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FD2A37A17CCF8F7005A686B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7FD2A37C17CCF8F7005A686B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -46,6 +50,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37126AAE17CF89E5001918A7 /* AVFoundation.framework in Frameworks */,
+				37126AAC17CF83F2001918A7 /* AudioToolbox.framework in Frameworks */,
 				7FD2A37B17CCF8F7005A686B /* UIKit.framework in Frameworks */,
 				7FD2A37D17CCF8F7005A686B /* Foundation.framework in Frameworks */,
 				7FD2A37F17CCF8F7005A686B /* CoreGraphics.framework in Frameworks */,
@@ -76,6 +82,8 @@
 		7FD2A37917CCF8F7005A686B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				37126AAD17CF89E5001918A7 /* AVFoundation.framework */,
+				37126AAB17CF83F2001918A7 /* AudioToolbox.framework */,
 				7FD2A37A17CCF8F7005A686B /* UIKit.framework */,
 				7FD2A37C17CCF8F7005A686B /* Foundation.framework */,
 				7FD2A37E17CCF8F7005A686B /* CoreGraphics.framework */,
@@ -268,6 +276,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UIImageViewSample/UIImageViewSample-Prefix.pch";
 				INFOPLIST_FILE = "UIImageViewSample/UIImageViewSample-Info.plist";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -279,6 +288,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UIImageViewSample/UIImageViewSample-Prefix.pch";
 				INFOPLIST_FILE = "UIImageViewSample/UIImageViewSample-Info.plist";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -303,6 +313,7 @@
 				7FD2A39C17CCF8F7005A686B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

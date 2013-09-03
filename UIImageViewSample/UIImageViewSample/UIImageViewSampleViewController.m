@@ -8,7 +8,15 @@
 
 #import "UIImageViewSampleViewController.h"
 
+#import <AudioToolbox/AudioToolbox.h>
+
+#import <AVFoundation/AVFoundation.h>
+
 @interface UIImageViewSampleViewController ()
+
+//@property (nonatomic, strong) SystemSoundID * soundID;
+
+@property (nonatomic, strong) AVAudioPlayer * musicPlayer;
 
 @end
 
@@ -49,11 +57,31 @@
     }
     
     [AnimationView setAnimationImages:muArray];
-    [AnimationView setAnimationDuration:2.0];
+    [AnimationView setAnimationDuration:4.0];
     
     [self.view addSubview:AnimationView];
     
     [AnimationView startAnimating];
+    
+    // Play Musics
+    //NSString * file = [[NSBundle mainBundle] pathForResource:@"QiongFlowers" ofType:@"mp3" inDirectory:@"Resource/Musics/"];
+//    
+//    static SystemSoundID soundID = 0;
+    NSString * path = [[NSBundle mainBundle] pathForResource:@"QiongFlowers" ofType:@"mp3" inDirectory:@"Resource/Musics/"];
+    NSURL * file = [NSURL fileURLWithPath:path];
+    self.musicPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:file error:nil];
+    
+    self.musicPlayer.numberOfLoops = -1;
+    [self.musicPlayer play];
+    
+    
+//    if(file)
+//    {
+//        // register sound
+//        AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath:file], &soundID);
+//    }
+//    
+//    AudioServicesPlaySystemSound(soundID);
     
     
 //    UIImageView *hpView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Resource/homePage"]];
