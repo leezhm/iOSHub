@@ -4,66 +4,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--View Controller - Item 2-->
-        <scene sceneID="p9K-vR-nOp">
-            <objects>
-                <viewController id="8Li-GT-u8Y" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="BmI-Sd-vnV">
-                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Second" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OAH-gg-O6G">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="53" id="3Ot-81-pPZ"/>
-                                    <constraint firstAttribute="width" constant="122" id="70c-VM-esR"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="OAH-gg-O6G" firstAttribute="centerX" secondItem="BmI-Sd-vnV" secondAttribute="centerX" type="default" id="d92-TB-BjM"/>
-                            <constraint firstItem="OAH-gg-O6G" firstAttribute="top" secondItem="BmI-Sd-vnV" secondAttribute="top" constant="202" id="kuJ-uh-KjK"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="RWK-KA-mLW"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="udT-rT-O2k" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-15" y="-213"/>
-        </scene>
-        <!--View Controller - Item 1-->
-        <scene sceneID="aS6-OK-rR4">
-            <objects>
-                <viewController id="ezA-La-ZUm" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="b7V-nF-90a">
-                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="First" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u6v-hQ-XqF">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="46" id="mAp-UA-70P"/>
-                                    <constraint firstAttribute="width" constant="114" id="xG9-hC-mh9"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="u6v-hQ-XqF" firstAttribute="top" secondItem="b7V-nF-90a" secondAttribute="top" constant="227" id="8HZ-1w-Blh"/>
-                            <constraint firstItem="u6v-hQ-XqF" firstAttribute="centerX" secondItem="b7V-nF-90a" secondAttribute="centerX" type="default" id="Jbh-8k-WDz"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="FLg-10-kRm"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5kg-rH-u09" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-15" y="-866"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="4Vb-t6-m33">
             <objects>
@@ -74,21 +14,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
-                    <connections>
-                        <segue destination="ezA-La-ZUm" kind="relationship" relationship="viewControllers" id="bbO-iF-X36"/>
-                        <segue destination="8Li-GT-u8Y" kind="relationship" relationship="viewControllers" id="wrJ-G6-F0s"/>
-                    </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pZ8-t5-8c7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-549" y="-539"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
