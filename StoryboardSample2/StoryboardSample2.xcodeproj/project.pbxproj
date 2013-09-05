@@ -13,11 +13,12 @@
 		37567B8317D854E6002C1E3E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 37567B8117D854E6002C1E3E /* InfoPlist.strings */; };
 		37567B8517D854E6002C1E3E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37567B8417D854E6002C1E3E /* main.m */; };
 		37567B8917D854E6002C1E3E /* SBSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37567B8817D854E6002C1E3E /* SBSAppDelegate.m */; };
-		37567B8B17D854E6002C1E3E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 37567B8A17D854E6002C1E3E /* Default.png */; };
-		37567B8D17D854E6002C1E3E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37567B8C17D854E6002C1E3E /* Default@2x.png */; };
-		37567B8F17D854E6002C1E3E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37567B8E17D854E6002C1E3E /* Default-568h@2x.png */; };
 		37567B9217D854E6002C1E3E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37567B9017D854E6002C1E3E /* MainStoryboard.storyboard */; };
 		37567B9517D854E6002C1E3E /* SBSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37567B9417D854E6002C1E3E /* SBSViewController.m */; };
+		37567BA117D871F3002C1E3E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37567B9D17D871F3002C1E3E /* Default-568h@2x.png */; };
+		37567BA217D871F3002C1E3E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 37567B9E17D871F3002C1E3E /* Default.png */; };
+		37567BA317D871F3002C1E3E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37567B9F17D871F3002C1E3E /* Default@2x.png */; };
+		37567BA517D87243002C1E3E /* huangguan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 37567BA417D87243002C1E3E /* huangguan.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,12 +32,13 @@
 		37567B8617D854E6002C1E3E /* StoryboardSample2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StoryboardSample2-Prefix.pch"; sourceTree = "<group>"; };
 		37567B8717D854E6002C1E3E /* SBSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBSAppDelegate.h; sourceTree = "<group>"; };
 		37567B8817D854E6002C1E3E /* SBSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBSAppDelegate.m; sourceTree = "<group>"; };
-		37567B8A17D854E6002C1E3E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		37567B8C17D854E6002C1E3E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		37567B8E17D854E6002C1E3E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		37567B9117D854E6002C1E3E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		37567B9317D854E6002C1E3E /* SBSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBSViewController.h; sourceTree = "<group>"; };
 		37567B9417D854E6002C1E3E /* SBSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBSViewController.m; sourceTree = "<group>"; };
+		37567B9D17D871F3002C1E3E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		37567B9E17D871F3002C1E3E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		37567B9F17D871F3002C1E3E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		37567BA417D87243002C1E3E /* huangguan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = huangguan.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		37567B6C17D854E6002C1E3E = {
 			isa = PBXGroup;
 			children = (
+				37567B9B17D871F3002C1E3E /* Resources */,
 				37567B7E17D854E6002C1E3E /* StoryboardSample2 */,
 				37567B7717D854E6002C1E3E /* Frameworks */,
 				37567B7617D854E6002C1E3E /* Products */,
@@ -100,11 +103,36 @@
 				37567B8117D854E6002C1E3E /* InfoPlist.strings */,
 				37567B8417D854E6002C1E3E /* main.m */,
 				37567B8617D854E6002C1E3E /* StoryboardSample2-Prefix.pch */,
-				37567B8A17D854E6002C1E3E /* Default.png */,
-				37567B8C17D854E6002C1E3E /* Default@2x.png */,
-				37567B8E17D854E6002C1E3E /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		37567B9B17D871F3002C1E3E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				37567B9C17D871F3002C1E3E /* Default */,
+				37567BA017D871F3002C1E3E /* Images */,
+			);
+			name = Resources;
+			path = StoryboardSample2/Resources;
+			sourceTree = "<group>";
+		};
+		37567B9C17D871F3002C1E3E /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				37567B9D17D871F3002C1E3E /* Default-568h@2x.png */,
+				37567B9E17D871F3002C1E3E /* Default.png */,
+				37567B9F17D871F3002C1E3E /* Default@2x.png */,
+			);
+			path = Default;
+			sourceTree = "<group>";
+		};
+		37567BA017D871F3002C1E3E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				37567BA417D87243002C1E3E /* huangguan.jpg */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,10 +188,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				37567B8317D854E6002C1E3E /* InfoPlist.strings in Resources */,
-				37567B8B17D854E6002C1E3E /* Default.png in Resources */,
-				37567B8D17D854E6002C1E3E /* Default@2x.png in Resources */,
-				37567B8F17D854E6002C1E3E /* Default-568h@2x.png in Resources */,
 				37567B9217D854E6002C1E3E /* MainStoryboard.storyboard in Resources */,
+				37567BA117D871F3002C1E3E /* Default-568h@2x.png in Resources */,
+				37567BA217D871F3002C1E3E /* Default.png in Resources */,
+				37567BA317D871F3002C1E3E /* Default@2x.png in Resources */,
+				37567BA517D87243002C1E3E /* huangguan.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
