@@ -12,6 +12,21 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tIn-0d-4vK">
+                            <rect key="frame" x="0.0" y="66" width="320" height="63"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" title="Button">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <segue destination="KN1-cK-xtW" kind="push" id="IIu-xc-szd"/>
+                            </connections>
+                        </button>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="jerryCell" id="6Ow-6M-Kax">
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
@@ -30,6 +45,28 @@
             </objects>
             <point key="canvasLocation" x="1094" y="-596"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="7kx-NH-FEc">
+            <objects>
+                <viewController id="KN1-cK-xtW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xiz-v1-aqk">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nmp-Rg-zUh"/>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nmp-Rg-zUh" firstAttribute="leading" secondItem="Xiz-v1-aqk" secondAttribute="leading" constant="97" id="9WX-e9-VfU"/>
+                            <constraint firstItem="nmp-Rg-zUh" firstAttribute="top" secondItem="Xiz-v1-aqk" secondAttribute="top" constant="201" id="HFV-e7-WbO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="gZ3-28-0Oe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xEz-vQ-b8P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1578" y="-587"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="BwV-U1-5RC">
             <objects>
@@ -46,6 +83,11 @@
             <point key="canvasLocation" x="560" y="-596"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
