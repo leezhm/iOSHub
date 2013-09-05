@@ -18,6 +18,7 @@
 		37A5E12A17D5DB020010021E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37A5E12917D5DB020010021E /* Default-568h@2x.png */; };
 		37A5E12D17D5DB020010021E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37A5E12B17D5DB020010021E /* MainStoryboard.storyboard */; };
 		37A5E13017D5DB020010021E /* StoryboardSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A5E12F17D5DB020010021E /* StoryboardSampleViewController.m */; };
+		7F49465817D8E7D100EB971D /* Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F49465717D8E7D100EB971D /* Animation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		37A5E12C17D5DB020010021E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		37A5E12E17D5DB020010021E /* StoryboardSampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoryboardSampleViewController.h; sourceTree = "<group>"; };
 		37A5E12F17D5DB020010021E /* StoryboardSampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoryboardSampleViewController.m; sourceTree = "<group>"; };
+		7F49465617D8E7D100EB971D /* Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animation.h; sourceTree = "<group>"; };
+		7F49465717D8E7D100EB971D /* Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				37A5E12E17D5DB020010021E /* StoryboardSampleViewController.h */,
 				37A5E12F17D5DB020010021E /* StoryboardSampleViewController.m */,
 				37A5E11A17D5DB020010021E /* Supporting Files */,
+				7F49465617D8E7D100EB971D /* Animation.h */,
+				7F49465717D8E7D100EB971D /* Animation.m */,
 			);
 			path = StoryboardSample;
 			sourceTree = "<group>";
@@ -177,6 +182,7 @@
 				37A5E12017D5DB020010021E /* main.m in Sources */,
 				37A5E12417D5DB020010021E /* StoryboardSampleAppDelegate.m in Sources */,
 				37A5E13017D5DB020010021E /* StoryboardSampleViewController.m in Sources */,
+				7F49465817D8E7D100EB971D /* Animation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +305,7 @@
 				37A5E13517D5DB020010021E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
