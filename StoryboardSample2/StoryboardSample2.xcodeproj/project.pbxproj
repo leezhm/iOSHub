@@ -19,6 +19,8 @@
 		37567BA217D871F3002C1E3E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 37567B9E17D871F3002C1E3E /* Default.png */; };
 		37567BA317D871F3002C1E3E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37567B9F17D871F3002C1E3E /* Default@2x.png */; };
 		37567BA517D87243002C1E3E /* huangguan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 37567BA417D87243002C1E3E /* huangguan.jpg */; };
+		37CEB25917D98805006AFAC0 /* PlayersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CEB25817D98805006AFAC0 /* PlayersViewController.m */; };
+		37CEB25C17D99D02006AFAC0 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CEB25B17D99D02006AFAC0 /* Player.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,10 @@
 		37567B9E17D871F3002C1E3E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		37567B9F17D871F3002C1E3E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		37567BA417D87243002C1E3E /* huangguan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = huangguan.jpg; sourceTree = "<group>"; };
+		37CEB25717D98805006AFAC0 /* PlayersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayersViewController.h; sourceTree = "<group>"; };
+		37CEB25817D98805006AFAC0 /* PlayersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayersViewController.m; sourceTree = "<group>"; };
+		37CEB25A17D99D02006AFAC0 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		37CEB25B17D99D02006AFAC0 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +95,10 @@
 				37567B8717D854E6002C1E3E /* SBSAppDelegate.h */,
 				37567B8817D854E6002C1E3E /* SBSAppDelegate.m */,
 				37567B9017D854E6002C1E3E /* MainStoryboard.storyboard */,
+				37CEB25A17D99D02006AFAC0 /* Player.h */,
+				37CEB25B17D99D02006AFAC0 /* Player.m */,
+				37CEB25717D98805006AFAC0 /* PlayersViewController.h */,
+				37CEB25817D98805006AFAC0 /* PlayersViewController.m */,
 				37567B9317D854E6002C1E3E /* SBSViewController.h */,
 				37567B9417D854E6002C1E3E /* SBSViewController.m */,
 				37567B7F17D854E6002C1E3E /* Supporting Files */,
@@ -206,6 +216,8 @@
 				37567B8517D854E6002C1E3E /* main.m in Sources */,
 				37567B8917D854E6002C1E3E /* SBSAppDelegate.m in Sources */,
 				37567B9517D854E6002C1E3E /* SBSViewController.m in Sources */,
+				37CEB25917D98805006AFAC0 /* PlayersViewController.m in Sources */,
+				37CEB25C17D99D02006AFAC0 /* Player.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +340,7 @@
 				37567B9A17D854E6002C1E3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

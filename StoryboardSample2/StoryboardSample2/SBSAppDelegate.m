@@ -8,11 +8,55 @@
 
 #import "SBSAppDelegate.h"
 
+#import "Player.h"
+#import "PlayersViewController.h"
+
 @implementation SBSAppDelegate
+{
+    NSMutableArray * players;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    
+    // init the array
+    players = [NSMutableArray arrayWithCapacity:20];
+    
+    // define a Player
+    Player * player = [[Player alloc] init];
+    player.name = @"Jerry Li";
+    player.game = @"Clash of Clan";
+    player.rating = 1892;
+    
+    // add that player to array
+    [players addObject:player];
+    
+    player = [Player new];
+    player.name = @"Eli Wang";
+    player.game = @"Sprint the Bottle";
+    player.rating = 626;
+    
+    // add that player to array
+    [players addObject:player];
+    
+    player = [Player new];
+    player.name = @"Dave Brubeck";
+    player.game = @"Texas Hold’em Poker";
+    player .rating = 2103;
+    
+    // add that player to array
+    [players addObject:player];
+    
+    
+    // get the viewController and set the players
+    UITabBarController * tabBarController = (UITabBarController *)self.window.rootViewController;    
+    UINavigationController * navigationController = [[tabBarController viewControllers] objectAtIndex:0];
+    PlayersViewController * playersViewController = [[navigationController viewControllers] objectAtIndex:0];    
+    playersViewController.players = players;
+    
+    
     return YES;
 }
 							
