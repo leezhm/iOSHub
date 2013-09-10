@@ -26,8 +26,8 @@
     UIButton * btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     
 
-    [btn setTitle:@"弹出弹入" forState:UIControlStateNormal];   
-    btn.frame = CGRectMake(20, 20, 60, 30); // set size of button
+    [btn setTitle:@"弹入弹出" forState:UIControlStateNormal];   
+    btn.frame = CGRectMake(20, 20, 80, 30); // set size of button
     
     // set the touchupinside event and event handle function    
     [btn addTarget:self action:@selector(btnMoveInAndOutForUIView) forControlEvents:UIControlEventTouchUpInside];
