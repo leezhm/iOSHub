@@ -93,8 +93,23 @@
     UIImageView * imgView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:imgPath]];
     [imgView setFrame:CGRectMake(0, 0, bounds.size.width, bounds.size.height)];
 
+    // set the center and add it to current view
+    imgView.center = CGPointMake(bounds.size.width / 2.0f, bounds.size.height * 1.5f);
     [self.view addSubview:imgView];
 
+
+    // push the image
+    [UIImageView animateWithDuration:1.5f animations:^{
+        imgView.center = CGPointMake(bounds.size.width / 2.0f, bounds.size.height / 2.0f);
+    } completion:^(BOOL finished) {
+        // and then push back
+        [UIImageView animateWithDuration:1.5f animations:^{
+            imgView.center = CGPointMake(bounds.size.width / 2.0f, bounds.size.height * 1.5f);
+        }completion:^(BOOL finished) {
+            //
+        }];
+        
+    }];
 }
 
 @end
