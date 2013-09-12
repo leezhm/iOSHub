@@ -34,11 +34,18 @@
         self.device = @"iOS4";
     }
     
-    // load a image as background
-    NSString * file = [NSString stringWithFormat:@"Images/%@", self.device];
-    NSLog(@"file path -> %@", file);
-    UIColor * backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:file]];
-    self.view.backgroundColor = backgroundColor;
+//    // load a image as background
+//    NSString * file = [NSString stringWithFormat:@"Images/%@", self.device];
+//    NSLog(@"file path -> %@", file);
+//    UIColor * backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:file]];
+//    self.view.backgroundColor = backgroundColor;
+    
+    // other method
+    NSString * file = [[NSBundle mainBundle] pathForResource:self.device ofType:@"png" inDirectory:@"Images"];
+    NSLog(@"path : %@", file);
+    
+    UIColor * background = [[UIColor alloc] initWithPatternImage:[UIImage imageWithContentsOfFile:file]];
+    self.view.backgroundColor = background;
     
 }
 
