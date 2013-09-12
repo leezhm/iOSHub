@@ -53,10 +53,16 @@
 
 - (void)tapGestureEventHandler:(UITapGestureRecognizer *)recognizer
 {
-    UIView * delegateView = [[DelegateView alloc] initWithFrame:self.view.frame];
+//    UIView * delegateView = [[DelegateView alloc] initWithFrame:self.view.frame];
+//    
+//    [UIView transitionFromView:self.view toView:delegateView duration:1.0f
+//                       options:UIViewAnimationOptionTransitionFlipFromRight completion:nil];
     
-    [UIView transitionFromView:self.view toView:delegateView duration:1.0f
-                       options:UIViewAnimationOptionTransitionFlipFromRight completion:nil];
+    UIImageView * pushImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Images/Other"]];
+    [pushImageView setFrame:self.view.frame];
+    
+    [UIView transitionFromView:self.view toView:pushImageView duration:1.0f
+                       options:UIViewAnimationOptionTransitionFlipFromBottom completion:nil];
 }
 
 @end
