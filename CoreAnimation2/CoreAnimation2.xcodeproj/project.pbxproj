@@ -11,6 +11,7 @@
 		374EFC0917E1659F00584F0B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 374EFC0617E1659F00584F0B /* Default.png */; };
 		374EFC0A17E1659F00584F0B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 374EFC0717E1659F00584F0B /* Default@2x.png */; };
 		374EFC0C17E165B300584F0B /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 374EFC0B17E165B300584F0B /* Images */; };
+		374EFC0F17E1952C00584F0B /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 374EFC0E17E1952C00584F0B /* CircleView.m */; };
 		37CD210817E160C600DF690E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37CD210717E160C600DF690E /* UIKit.framework */; };
 		37CD210A17E160C600DF690E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37CD210917E160C600DF690E /* Foundation.framework */; };
 		37CD210C17E160C600DF690E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37CD210B17E160C600DF690E /* CoreGraphics.framework */; };
@@ -26,6 +27,8 @@
 		374EFC0617E1659F00584F0B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		374EFC0717E1659F00584F0B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		374EFC0B17E165B300584F0B /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Images; path = Resources/Images; sourceTree = "<group>"; };
+		374EFC0D17E1952C00584F0B /* CircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleView.h; sourceTree = "<group>"; };
+		374EFC0E17E1952C00584F0B /* CircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleView.m; sourceTree = "<group>"; };
 		37CD210417E160C600DF690E /* CoreAnimation2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreAnimation2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37CD210717E160C600DF690E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		37CD210917E160C600DF690E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -106,6 +109,8 @@
 		37CD210D17E160C600DF690E /* CoreAnimation2 */ = {
 			isa = PBXGroup;
 			children = (
+				374EFC0D17E1952C00584F0B /* CircleView.h */,
+				374EFC0E17E1952C00584F0B /* CircleView.m */,
 				37CD211617E160C600DF690E /* CAAppDelegate.h */,
 				37CD211717E160C600DF690E /* CAAppDelegate.m */,
 				37CD211F17E160C600DF690E /* CAViewController.h */,
@@ -198,6 +203,7 @@
 				37CD211417E160C600DF690E /* main.m in Sources */,
 				37CD211817E160C600DF690E /* CAAppDelegate.m in Sources */,
 				37CD212117E160C600DF690E /* CAViewController.m in Sources */,
+				374EFC0F17E1952C00584F0B /* CircleView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

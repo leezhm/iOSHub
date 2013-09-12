@@ -8,9 +8,13 @@
 
 #import "CAViewController.h"
 
+#import "CircleView.h"
+
 @interface CAViewController ()
 
 @property (nonatomic, weak) NSString * device;
+
+@property (nonatomic, strong) CircleView * circleView;
 
 @end
 
@@ -46,6 +50,13 @@
     
     UIColor * background = [[UIColor alloc] initWithPatternImage:[UIImage imageWithContentsOfFile:file]];
     self.view.backgroundColor = background;
+    
+    // add a circle view
+    self.circleView = [[CircleView alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
+    self.circleView.center = CGPointMake(bounds.size.width / 2, 20);
+    
+    // add to current view
+    [self.view addSubview:self.circleView];
     
 }
 
