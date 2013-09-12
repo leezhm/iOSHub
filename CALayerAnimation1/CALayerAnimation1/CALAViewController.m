@@ -53,14 +53,16 @@
     CALayer * layer = [layers objectAtIndex:0];
     [layer setPosition:CGPointMake(200, 250)];
     
+    [CATransaction begin];
+    [CATransaction setDisableActions:YES];
     CABasicAnimation * anim = [CABasicAnimation animationWithKeyPath:@"opacity"];
     anim.fromValue = [NSNumber numberWithDouble:1.0];
     anim.toValue = [NSNumber numberWithDouble:0.0];
-    
     anim.autoreverses = YES;
     anim.repeatCount = INFINITY;
     anim.duration = 2.0;
     [layer addAnimation:anim forKey:@"anim"];
+    [CATransaction commit];
 
     
     NSArray * views = self.view.subviews;
