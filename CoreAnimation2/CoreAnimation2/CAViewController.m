@@ -58,12 +58,25 @@
     // add to current view
     [self.view addSubview:self.circleView];
     
+    // Tap Gesture
+    UITapGestureRecognizer * tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGestureEventHandler)];
+    [self.view addGestureRecognizer:tapGesture];
+    
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)tapGestureEventHandler
+{
+    NSLog(@"Tap the view ... drop the circle view ... ahahahah ... ");
+    
+    [UIView animateWithDuration:1.0f animations:^{
+        self.circleView.center = CGPointMake(160, 300);
+    }];
 }
 
 @end
