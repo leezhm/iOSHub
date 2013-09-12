@@ -13,11 +13,12 @@
 		374EFC2717E1A29F00584F0B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 374EFC2517E1A29F00584F0B /* InfoPlist.strings */; };
 		374EFC2917E1A29F00584F0B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 374EFC2817E1A29F00584F0B /* main.m */; };
 		374EFC2D17E1A29F00584F0B /* CALAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 374EFC2C17E1A29F00584F0B /* CALAppDelegate.m */; };
-		374EFC2F17E1A29F00584F0B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 374EFC2E17E1A29F00584F0B /* Default.png */; };
-		374EFC3117E1A29F00584F0B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 374EFC3017E1A29F00584F0B /* Default@2x.png */; };
-		374EFC3317E1A29F00584F0B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 374EFC3217E1A29F00584F0B /* Default-568h@2x.png */; };
 		374EFC3617E1A29F00584F0B /* CALViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 374EFC3517E1A29F00584F0B /* CALViewController.m */; };
 		374EFC3917E1A29F00584F0B /* CALViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 374EFC3717E1A29F00584F0B /* CALViewController.xib */; };
+		374EFC4617E1A88B00584F0B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 374EFC4317E1A88B00584F0B /* Default-568h@2x.png */; };
+		374EFC4717E1A88B00584F0B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 374EFC4417E1A88B00584F0B /* Default.png */; };
+		374EFC4817E1A88B00584F0B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 374EFC4517E1A88B00584F0B /* Default@2x.png */; };
+		374EFC4A17E1A8EC00584F0B /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 374EFC4917E1A8EC00584F0B /* Images */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,12 +32,13 @@
 		374EFC2A17E1A29F00584F0B /* CALayerSample1-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CALayerSample1-Prefix.pch"; sourceTree = "<group>"; };
 		374EFC2B17E1A29F00584F0B /* CALAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CALAppDelegate.h; sourceTree = "<group>"; };
 		374EFC2C17E1A29F00584F0B /* CALAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CALAppDelegate.m; sourceTree = "<group>"; };
-		374EFC2E17E1A29F00584F0B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		374EFC3017E1A29F00584F0B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		374EFC3217E1A29F00584F0B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		374EFC3417E1A29F00584F0B /* CALViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CALViewController.h; sourceTree = "<group>"; };
 		374EFC3517E1A29F00584F0B /* CALViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CALViewController.m; sourceTree = "<group>"; };
 		374EFC3817E1A29F00584F0B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CALViewController.xib; sourceTree = "<group>"; };
+		374EFC4317E1A88B00584F0B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		374EFC4417E1A88B00584F0B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		374EFC4517E1A88B00584F0B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		374EFC4917E1A8EC00584F0B /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Images; path = Resources/Images; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		374EFC1017E1A29F00584F0B = {
 			isa = PBXGroup;
 			children = (
+				374EFC3F17E1A86800584F0B /* Resources */,
 				374EFC2217E1A29F00584F0B /* CALayerSample1 */,
 				374EFC1B17E1A29F00584F0B /* Frameworks */,
 				374EFC1A17E1A29F00584F0B /* Products */,
@@ -100,11 +103,28 @@
 				374EFC2517E1A29F00584F0B /* InfoPlist.strings */,
 				374EFC2817E1A29F00584F0B /* main.m */,
 				374EFC2A17E1A29F00584F0B /* CALayerSample1-Prefix.pch */,
-				374EFC2E17E1A29F00584F0B /* Default.png */,
-				374EFC3017E1A29F00584F0B /* Default@2x.png */,
-				374EFC3217E1A29F00584F0B /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		374EFC3F17E1A86800584F0B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				374EFC4917E1A8EC00584F0B /* Images */,
+				374EFC4217E1A88B00584F0B /* Default */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		374EFC4217E1A88B00584F0B /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				374EFC4317E1A88B00584F0B /* Default-568h@2x.png */,
+				374EFC4417E1A88B00584F0B /* Default.png */,
+				374EFC4517E1A88B00584F0B /* Default@2x.png */,
+			);
+			name = Default;
+			path = Resources/Default;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,10 +180,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				374EFC2717E1A29F00584F0B /* InfoPlist.strings in Resources */,
-				374EFC2F17E1A29F00584F0B /* Default.png in Resources */,
-				374EFC3117E1A29F00584F0B /* Default@2x.png in Resources */,
-				374EFC3317E1A29F00584F0B /* Default-568h@2x.png in Resources */,
 				374EFC3917E1A29F00584F0B /* CALViewController.xib in Resources */,
+				374EFC4617E1A88B00584F0B /* Default-568h@2x.png in Resources */,
+				374EFC4717E1A88B00584F0B /* Default.png in Resources */,
+				374EFC4817E1A88B00584F0B /* Default@2x.png in Resources */,
+				374EFC4A17E1A8EC00584F0B /* Images in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
