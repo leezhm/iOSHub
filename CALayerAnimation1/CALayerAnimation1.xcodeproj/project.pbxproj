@@ -18,6 +18,7 @@
 		374EFC7317E1EAC300584F0B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 374EFC7217E1EAC300584F0B /* Default-568h@2x.png */; };
 		374EFC7617E1EAC300584F0B /* CALAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 374EFC7517E1EAC300584F0B /* CALAViewController.m */; };
 		374EFC7917E1EAC300584F0B /* CALAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 374EFC7717E1EAC300584F0B /* CALAViewController.xib */; };
+		374EFC8017E1EB0E00584F0B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 374EFC7F17E1EB0E00584F0B /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		374EFC7417E1EAC300584F0B /* CALAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CALAViewController.h; sourceTree = "<group>"; };
 		374EFC7517E1EAC300584F0B /* CALAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CALAViewController.m; sourceTree = "<group>"; };
 		374EFC7817E1EAC300584F0B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CALAViewController.xib; sourceTree = "<group>"; };
+		374EFC7F17E1EB0E00584F0B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				374EFC8017E1EB0E00584F0B /* QuartzCore.framework in Frameworks */,
 				374EFC5D17E1EAC200584F0B /* UIKit.framework in Frameworks */,
 				374EFC5F17E1EAC200584F0B /* Foundation.framework in Frameworks */,
 				374EFC6117E1EAC200584F0B /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +76,7 @@
 		374EFC5B17E1EAC200584F0B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				374EFC7F17E1EB0E00584F0B /* QuartzCore.framework */,
 				374EFC5C17E1EAC200584F0B /* UIKit.framework */,
 				374EFC5E17E1EAC200584F0B /* Foundation.framework */,
 				374EFC6017E1EAC200584F0B /* CoreGraphics.framework */,
