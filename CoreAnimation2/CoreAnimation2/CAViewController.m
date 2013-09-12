@@ -59,7 +59,8 @@
     [self.view addSubview:self.circleView];
     
     // Tap Gesture
-    UITapGestureRecognizer * tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGestureEventHandler)];
+    UITapGestureRecognizer * tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:
+                                           @selector(tapGestureEventHandler:)];
     [self.view addGestureRecognizer:tapGesture];
     
 }
@@ -70,12 +71,28 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)tapGestureEventHandler
+//- (void)tapGestureEventHandler
+//{
+//    NSLog(@"Tap the view ... drop the circle view ... ahahahah ... ");
+//    
+//    [UIView animateWithDuration:1.0f animations:^{
+//        self.circleView.center = CGPointMake(160, 300);
+//    }];
+//}
+
+- (void)tapGestureEventHandler:(UITapGestureRecognizer *)recognizer
 {
     NSLog(@"Tap the view ... drop the circle view ... ahahahah ... ");
     
     [UIView animateWithDuration:1.0f animations:^{
+        
+        // forbiden the tap event handler when this anmation is executing.
+        recognizer.enabled = NO;
+        
         self.circleView.center = CGPointMake(160, 300);
+    } completion:^(BOOL finished){
+        // enable recognizer again
+        recognizer.enabled = YES;
     }];
 }
 
