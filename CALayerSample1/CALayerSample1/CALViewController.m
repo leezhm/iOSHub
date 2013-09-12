@@ -10,6 +10,8 @@
 
 #import <QuartzCore/QuartzCore.h>
 
+#import "DelegateView.h"
+
 @interface CALViewController ()
 
 @end
@@ -36,12 +38,25 @@
     //
     UIImage * img = [UIImage imageNamed:file];
     self.view.layer.contents = (__bridge id)(img.CGImage);
+    
+    UITapGestureRecognizer * tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self
+                                        action:@selector(tapGestureEventHandler:)];
+    
+    [self.view addGestureRecognizer:tapRecognizer];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)tapGestureEventHandler:(UITapGestureRecognizer *)recognizer
+{
+    UIView * delegateView = [[DelegateView alloc] initWithFrame:self.view.frame];
+    
+    [UIView transitionFromView:self.view toView:delegateView duration:1.0f
+                       options:UIViewAnimationOptionTransitionFlipFromRight completion:nil];
 }
 
 @end

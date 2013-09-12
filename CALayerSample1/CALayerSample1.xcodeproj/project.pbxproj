@@ -20,6 +20,7 @@
 		374EFC4817E1A88B00584F0B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 374EFC4517E1A88B00584F0B /* Default@2x.png */; };
 		374EFC4A17E1A8EC00584F0B /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 374EFC4917E1A8EC00584F0B /* Images */; };
 		374EFC4C17E1A95000584F0B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 374EFC4B17E1A95000584F0B /* QuartzCore.framework */; };
+		374EFC4F17E1B48C00584F0B /* DelegateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 374EFC4E17E1B48C00584F0B /* DelegateView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,8 @@
 		374EFC4517E1A88B00584F0B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		374EFC4917E1A8EC00584F0B /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Images; path = Resources/Images; sourceTree = "<group>"; };
 		374EFC4B17E1A95000584F0B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		374EFC4D17E1B48C00584F0B /* DelegateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelegateView.h; sourceTree = "<group>"; };
+		374EFC4E17E1B48C00584F0B /* DelegateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelegateView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +98,8 @@
 				374EFC3417E1A29F00584F0B /* CALViewController.h */,
 				374EFC3517E1A29F00584F0B /* CALViewController.m */,
 				374EFC3717E1A29F00584F0B /* CALViewController.xib */,
+				374EFC4D17E1B48C00584F0B /* DelegateView.h */,
+				374EFC4E17E1B48C00584F0B /* DelegateView.m */,
 				374EFC2317E1A29F00584F0B /* Supporting Files */,
 			);
 			path = CALayerSample1;
@@ -202,6 +207,7 @@
 				374EFC2917E1A29F00584F0B /* main.m in Sources */,
 				374EFC2D17E1A29F00584F0B /* CALAppDelegate.m in Sources */,
 				374EFC3617E1A29F00584F0B /* CALViewController.m in Sources */,
+				374EFC4F17E1B48C00584F0B /* DelegateView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
