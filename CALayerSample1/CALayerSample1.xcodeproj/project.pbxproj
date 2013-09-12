@@ -19,6 +19,7 @@
 		374EFC4717E1A88B00584F0B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 374EFC4417E1A88B00584F0B /* Default.png */; };
 		374EFC4817E1A88B00584F0B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 374EFC4517E1A88B00584F0B /* Default@2x.png */; };
 		374EFC4A17E1A8EC00584F0B /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 374EFC4917E1A8EC00584F0B /* Images */; };
+		374EFC4C17E1A95000584F0B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 374EFC4B17E1A95000584F0B /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		374EFC4417E1A88B00584F0B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		374EFC4517E1A88B00584F0B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		374EFC4917E1A8EC00584F0B /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Images; path = Resources/Images; sourceTree = "<group>"; };
+		374EFC4B17E1A95000584F0B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				374EFC4C17E1A95000584F0B /* QuartzCore.framework in Frameworks */,
 				374EFC1D17E1A29F00584F0B /* UIKit.framework in Frameworks */,
 				374EFC1F17E1A29F00584F0B /* Foundation.framework in Frameworks */,
 				374EFC2117E1A29F00584F0B /* CoreGraphics.framework in Frameworks */,
@@ -76,6 +79,7 @@
 		374EFC1B17E1A29F00584F0B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				374EFC4B17E1A95000584F0B /* QuartzCore.framework */,
 				374EFC1C17E1A29F00584F0B /* UIKit.framework */,
 				374EFC1E17E1A29F00584F0B /* Foundation.framework */,
 				374EFC2017E1A29F00584F0B /* CoreGraphics.framework */,
