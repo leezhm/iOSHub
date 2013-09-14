@@ -99,11 +99,11 @@
 
 
     // push the image
-    [UIImageView animateWithDuration:1.5f animations:^{
+    [UIImageView animateWithDuration:0.5f animations:^{
         imgView.center = CGPointMake(bounds.size.width / 2.0f, bounds.size.height / 2.0f);
     } completion:^(BOOL finished) {
         // and then push back
-        [UIImageView animateWithDuration:1.5f animations:^{
+        [UIImageView animateWithDuration:0.5f animations:^{
             imgView.center = CGPointMake(bounds.size.width / 2.0f, bounds.size.height * 1.5f);
         }completion:^(BOOL finished) {
             //
