@@ -1,0 +1,306 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F94660D17E4617100F9EB53 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F94660C17E4617100F9EB53 /* UIKit.framework */; };
+		7F94660F17E4617100F9EB53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F94660E17E4617100F9EB53 /* Foundation.framework */; };
+		7F94661117E4617100F9EB53 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F94661017E4617100F9EB53 /* CoreGraphics.framework */; };
+		7F94661717E4617100F9EB53 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F94661517E4617100F9EB53 /* InfoPlist.strings */; };
+		7F94661917E4617100F9EB53 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F94661817E4617100F9EB53 /* main.m */; };
+		7F94661D17E4617100F9EB53 /* KFAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F94661C17E4617100F9EB53 /* KFAAppDelegate.m */; };
+		7F94661F17E4617100F9EB53 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F94661E17E4617100F9EB53 /* Default.png */; };
+		7F94662117E4617100F9EB53 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F94662017E4617100F9EB53 /* Default@2x.png */; };
+		7F94662317E4617100F9EB53 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F94662217E4617100F9EB53 /* Default-568h@2x.png */; };
+		7F94662617E4617100F9EB53 /* KFAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F94662517E4617100F9EB53 /* KFAViewController.m */; };
+		7F94662917E4617100F9EB53 /* KFAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F94662717E4617100F9EB53 /* KFAViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7F94660917E4617100F9EB53 /* KeyFrameAnimation1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyFrameAnimation1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F94660C17E4617100F9EB53 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7F94660E17E4617100F9EB53 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7F94661017E4617100F9EB53 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7F94661417E4617100F9EB53 /* KeyFrameAnimation1-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KeyFrameAnimation1-Info.plist"; sourceTree = "<group>"; };
+		7F94661617E4617100F9EB53 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7F94661817E4617100F9EB53 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7F94661A17E4617100F9EB53 /* KeyFrameAnimation1-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KeyFrameAnimation1-Prefix.pch"; sourceTree = "<group>"; };
+		7F94661B17E4617100F9EB53 /* KFAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFAAppDelegate.h; sourceTree = "<group>"; };
+		7F94661C17E4617100F9EB53 /* KFAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFAAppDelegate.m; sourceTree = "<group>"; };
+		7F94661E17E4617100F9EB53 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		7F94662017E4617100F9EB53 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		7F94662217E4617100F9EB53 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		7F94662417E4617100F9EB53 /* KFAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFAViewController.h; sourceTree = "<group>"; };
+		7F94662517E4617100F9EB53 /* KFAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFAViewController.m; sourceTree = "<group>"; };
+		7F94662817E4617100F9EB53 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/KFAViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F94660617E4617100F9EB53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F94660D17E4617100F9EB53 /* UIKit.framework in Frameworks */,
+				7F94660F17E4617100F9EB53 /* Foundation.framework in Frameworks */,
+				7F94661117E4617100F9EB53 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F94660017E4617100F9EB53 = {
+			isa = PBXGroup;
+			children = (
+				7F94661217E4617100F9EB53 /* KeyFrameAnimation1 */,
+				7F94660B17E4617100F9EB53 /* Frameworks */,
+				7F94660A17E4617100F9EB53 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7F94660A17E4617100F9EB53 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F94660917E4617100F9EB53 /* KeyFrameAnimation1.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F94660B17E4617100F9EB53 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F94660C17E4617100F9EB53 /* UIKit.framework */,
+				7F94660E17E4617100F9EB53 /* Foundation.framework */,
+				7F94661017E4617100F9EB53 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7F94661217E4617100F9EB53 /* KeyFrameAnimation1 */ = {
+			isa = PBXGroup;
+			children = (
+				7F94661B17E4617100F9EB53 /* KFAAppDelegate.h */,
+				7F94661C17E4617100F9EB53 /* KFAAppDelegate.m */,
+				7F94662417E4617100F9EB53 /* KFAViewController.h */,
+				7F94662517E4617100F9EB53 /* KFAViewController.m */,
+				7F94662717E4617100F9EB53 /* KFAViewController.xib */,
+				7F94661317E4617100F9EB53 /* Supporting Files */,
+			);
+			path = KeyFrameAnimation1;
+			sourceTree = "<group>";
+		};
+		7F94661317E4617100F9EB53 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F94661417E4617100F9EB53 /* KeyFrameAnimation1-Info.plist */,
+				7F94661517E4617100F9EB53 /* InfoPlist.strings */,
+				7F94661817E4617100F9EB53 /* main.m */,
+				7F94661A17E4617100F9EB53 /* KeyFrameAnimation1-Prefix.pch */,
+				7F94661E17E4617100F9EB53 /* Default.png */,
+				7F94662017E4617100F9EB53 /* Default@2x.png */,
+				7F94662217E4617100F9EB53 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7F94660817E4617100F9EB53 /* KeyFrameAnimation1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F94662C17E4617100F9EB53 /* Build configuration list for PBXNativeTarget "KeyFrameAnimation1" */;
+			buildPhases = (
+				7F94660517E4617100F9EB53 /* Sources */,
+				7F94660617E4617100F9EB53 /* Frameworks */,
+				7F94660717E4617100F9EB53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeyFrameAnimation1;
+			productName = KeyFrameAnimation1;
+			productReference = 7F94660917E4617100F9EB53 /* KeyFrameAnimation1.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F94660117E4617100F9EB53 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = KFA;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Jerry.li;
+			};
+			buildConfigurationList = 7F94660417E4617100F9EB53 /* Build configuration list for PBXProject "KeyFrameAnimation1" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7F94660017E4617100F9EB53;
+			productRefGroup = 7F94660A17E4617100F9EB53 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F94660817E4617100F9EB53 /* KeyFrameAnimation1 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7F94660717E4617100F9EB53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F94661717E4617100F9EB53 /* InfoPlist.strings in Resources */,
+				7F94661F17E4617100F9EB53 /* Default.png in Resources */,
+				7F94662117E4617100F9EB53 /* Default@2x.png in Resources */,
+				7F94662317E4617100F9EB53 /* Default-568h@2x.png in Resources */,
+				7F94662917E4617100F9EB53 /* KFAViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F94660517E4617100F9EB53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F94661917E4617100F9EB53 /* main.m in Sources */,
+				7F94661D17E4617100F9EB53 /* KFAAppDelegate.m in Sources */,
+				7F94662617E4617100F9EB53 /* KFAViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7F94661517E4617100F9EB53 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F94661617E4617100F9EB53 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7F94662717E4617100F9EB53 /* KFAViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F94662817E4617100F9EB53 /* en */,
+			);
+			name = KFAViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7F94662A17E4617100F9EB53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7F94662B17E4617100F9EB53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7F94662D17E4617100F9EB53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KeyFrameAnimation1/KeyFrameAnimation1-Prefix.pch";
+				INFOPLIST_FILE = "KeyFrameAnimation1/KeyFrameAnimation1-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7F94662E17E4617100F9EB53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KeyFrameAnimation1/KeyFrameAnimation1-Prefix.pch";
+				INFOPLIST_FILE = "KeyFrameAnimation1/KeyFrameAnimation1-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F94660417E4617100F9EB53 /* Build configuration list for PBXProject "KeyFrameAnimation1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F94662A17E4617100F9EB53 /* Debug */,
+				7F94662B17E4617100F9EB53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F94662C17E4617100F9EB53 /* Build configuration list for PBXNativeTarget "KeyFrameAnimation1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F94662D17E4617100F9EB53 /* Debug */,
+				7F94662E17E4617100F9EB53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7F94660117E4617100F9EB53 /* Project object */;
+}
