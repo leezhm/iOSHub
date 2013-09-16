@@ -8,7 +8,15 @@
 
 #import "KFAViewController.h"
 
+#import <QuartzCore/QuartzCore.h>
+
 @interface KFAViewController ()
+
+
+@property (nonatomic, strong) CAKeyframeAnimation * keyAnimation;
+
+@property (nonatomic, assign) CGRect mainScreenBound;
+
 
 @end
 
@@ -18,6 +26,12 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    // the bound of main screen
+    self.mainScreenBound = [[UIScreen mainScreen] bounds];
+    
+    // set the background
+    self.view.backgroundColor = [UIColor scrollViewTexturedBackgroundColor];
 }
 
 - (void)didReceiveMemoryWarning
