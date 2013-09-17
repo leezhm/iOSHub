@@ -21,7 +21,7 @@
 		37B8E52B17E82BC200EBE68D /* MvsYellowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B8E52A17E82BC200EBE68D /* MvsYellowViewController.m */; };
 		37B8E52D17E82C0000EBE68D /* SwitchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37B8E52C17E82C0000EBE68D /* SwitchView.xib */; };
 		37B8E52F17E82C2F00EBE68D /* BlueView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37B8E52E17E82C2F00EBE68D /* BlueView.xib */; };
-		37B8E53117E82C4400EBE68D /* YellowView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37B8E53017E82C4400EBE68D /* YellowView.xib */; };
+		37B8E53317E82DA400EBE68D /* YellowView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37B8E53217E82DA400EBE68D /* YellowView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,7 +46,7 @@
 		37B8E52A17E82BC200EBE68D /* MvsYellowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MvsYellowViewController.m; sourceTree = "<group>"; };
 		37B8E52C17E82C0000EBE68D /* SwitchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwitchView.xib; sourceTree = "<group>"; };
 		37B8E52E17E82C2F00EBE68D /* BlueView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BlueView.xib; sourceTree = "<group>"; };
-		37B8E53017E82C4400EBE68D /* YellowView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = YellowView.xib; path = ../YellowView.xib; sourceTree = "<group>"; };
+		37B8E53217E82DA400EBE68D /* YellowView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YellowView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +93,7 @@
 		37B8E50C17E8286700EBE68D /* MultiViewerSample */ = {
 			isa = PBXGroup;
 			children = (
+				37B8E53217E82DA400EBE68D /* YellowView.xib */,
 				37B8E52617E82BB300EBE68D /* MvsBlueViewController.h */,
 				37B8E52717E82BB300EBE68D /* MvsBlueViewController.m */,
 				37B8E52917E82BC200EBE68D /* MvsYellowViewController.h */,
@@ -102,7 +103,6 @@
 				37B8E51517E8286800EBE68D /* MvsAppDelegate.h */,
 				37B8E51617E8286800EBE68D /* MvsAppDelegate.m */,
 				37B8E52E17E82C2F00EBE68D /* BlueView.xib */,
-				37B8E53017E82C4400EBE68D /* YellowView.xib */,
 				37B8E52C17E82C0000EBE68D /* SwitchView.xib */,
 				37B8E50D17E8286700EBE68D /* Supporting Files */,
 			);
@@ -181,7 +181,7 @@
 				37B8E51D17E8286800EBE68D /* Default-568h@2x.png in Resources */,
 				37B8E52D17E82C0000EBE68D /* SwitchView.xib in Resources */,
 				37B8E52F17E82C2F00EBE68D /* BlueView.xib in Resources */,
-				37B8E53117E82C4400EBE68D /* YellowView.xib in Resources */,
+				37B8E53317E82DA400EBE68D /* YellowView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
