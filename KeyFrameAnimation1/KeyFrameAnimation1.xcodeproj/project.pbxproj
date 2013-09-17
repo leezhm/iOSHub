@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3752A0EB17E6CACE00D4B224 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3752A0EA17E6CACE00D4B224 /* QuartzCore.framework */; };
+		3752A0EF17E6D32F00D4B224 /* Leaf.png in Resources */ = {isa = PBXBuildFile; fileRef = 3752A0EE17E6D32F00D4B224 /* Leaf.png */; };
 		7F94660D17E4617100F9EB53 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F94660C17E4617100F9EB53 /* UIKit.framework */; };
 		7F94660F17E4617100F9EB53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F94660E17E4617100F9EB53 /* Foundation.framework */; };
 		7F94661117E4617100F9EB53 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F94661017E4617100F9EB53 /* CoreGraphics.framework */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		3752A0EA17E6CACE00D4B224 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3752A0EE17E6D32F00D4B224 /* Leaf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Leaf.png; sourceTree = "<group>"; };
 		7F94660917E4617100F9EB53 /* KeyFrameAnimation1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyFrameAnimation1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F94660C17E4617100F9EB53 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7F94660E17E4617100F9EB53 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -87,6 +89,7 @@
 		7F94661217E4617100F9EB53 /* KeyFrameAnimation1 */ = {
 			isa = PBXGroup;
 			children = (
+				3752A0EE17E6D32F00D4B224 /* Leaf.png */,
 				7F94661B17E4617100F9EB53 /* KFAAppDelegate.h */,
 				7F94661C17E4617100F9EB53 /* KFAAppDelegate.m */,
 				7F94662417E4617100F9EB53 /* KFAViewController.h */,
@@ -168,6 +171,7 @@
 				7F94662117E4617100F9EB53 /* Default@2x.png in Resources */,
 				7F94662317E4617100F9EB53 /* Default-568h@2x.png in Resources */,
 				7F94662917E4617100F9EB53 /* KFAViewController.xib in Resources */,
+				3752A0EF17E6D32F00D4B224 /* Leaf.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
