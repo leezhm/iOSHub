@@ -35,14 +35,22 @@
     self.view.backgroundColor = [UIColor scrollViewTexturedBackgroundColor];
     
     self.blueViewController = [[MvsBlueViewController alloc] initWithNibName:@"BlueView" bundle:nil];
-    //[self.view insertSubview:self.blueViewController.view atIndex:0];
+    [self.view insertSubview:self.blueViewController.view atIndex:0];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    
+    // Release any cached data, images, etc, that aren't use
+    if (nil == self.blueViewController.view.superview) {
+        self.blueViewController = nil;
+    } else {
+        self.yellowViewController = nil;
+    }
 }
+
 
 - (IBAction)switchViews:(id)sender
 {
