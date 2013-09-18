@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+@class MvsBlueViewController;
+@class MvsYellowViewController;
+
+
 @interface MvsSwitchViewController : UIViewController
+
+@property (nonatomic, strong) MvsBlueViewController * blueViewController;
+@property (nonatomic, strong) MvsYellowViewController * yellowViewController;
+
+- (IBAction)switchViews:(id)sender;
 
 @end
