@@ -46,7 +46,21 @@
 
 - (IBAction)switchViews:(id)sender
 {
-    
+    if (nil == self.yellowViewController.view.superview) {
+        if (nil == self.yellowViewController) {
+            self.yellowViewController = [[MvsYellowViewController alloc] initWithNibName:@"YellowView" bundle:nil];
+        }
+        
+        [self.blueViewController.view removeFromSuperview];
+        [self.view insertSubview:self.yellowViewController.view atIndex:0];
+    } else {
+        if(nil == self.blueViewController) {
+            self.blueViewController = [[MvsBlueViewController alloc] initWithNibName:@"BlueView" bundle:nil];
+        }
+        
+        [self.yellowViewController.view removeFromSuperview];
+        [self.view insertSubview:self.blueViewController.view atIndex:0];
+    }
 }
 
 @end
