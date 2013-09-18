@@ -8,6 +8,9 @@
 
 #import "MvsSwitchViewController.h"
 
+#import "MvsBlueViewController.h"
+#import "MvsYellowViewController.h"
+
 @interface MvsSwitchViewController ()
 
 @end
@@ -27,6 +30,12 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    // set background
+    self.view.backgroundColor = [UIColor scrollViewTexturedBackgroundColor];
+    
+    self.blueViewController = [[MvsBlueViewController alloc] initWithNibName:@"BlueView" bundle:nil];
+    //[self.view insertSubview:self.blueViewController.view atIndex:0];
 }
 
 - (void)didReceiveMemoryWarning

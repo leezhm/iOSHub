@@ -27,6 +27,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    // set background
+    [self.view setBackgroundColor:[UIColor yellowColor]];
 }
 
 - (void)didReceiveMemoryWarning
