@@ -50,6 +50,13 @@
     
     NSLog(@"Supper View (%f, %f, %f, %f)", self.view.superview.frame.origin.x, self.view.superview.frame.origin.y,
           self.view.superview.frame.size.width, self.view.superview.frame.size.height);
+    
+    UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Yellow View Button Pressed"
+                                                     message:@"You pressed the button on the yellow view"
+                                                    delegate:nil
+                                           cancelButtonTitle:@"Yes, I did."
+                                           otherButtonTitles:nil];
+    [alert show];
 }
 
 @end
