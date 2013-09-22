@@ -57,10 +57,16 @@
 
 - (IBAction)switchViews:(id)sender
 {
+    [UIView beginAnimations:@"View Flip" context:nil];
+    [UIView setAnimationDuration:1.25];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
+    
     if (nil == self.yellowViewController.view.superview) {
         if (nil == self.yellowViewController) {
             self.yellowViewController = [[MvsYellowViewController alloc] initWithNibName:@"YellowView" bundle:nil];
         }
+        
+        [UIView setAnimationTransition:UIViewAnimationTransitionCurlUp forView:self.view cache:YES];
         
         [self.blueViewController.view removeFromSuperview];
         
@@ -73,9 +79,13 @@
             self.blueViewController = [[MvsBlueViewController alloc] initWithNibName:@"BlueView" bundle:nil];
         }
         
+        [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:self.view cache:YES];
+        
         [self.yellowViewController.view removeFromSuperview];
         [self.view insertSubview:self.blueViewController.view atIndex:0];
     }
+    
+    [UIView commitAnimations];
 }
 
 @end
