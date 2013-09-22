@@ -10,4 +10,6 @@
 
 @interface MvsBlueViewController : UIViewController
 
+- (IBAction)blueButtonPress;
+
 @end

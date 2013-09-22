@@ -36,6 +36,9 @@
     
     self.blueViewController = [[MvsBlueViewController alloc] initWithNibName:@"BlueView" bundle:nil];
     [self.view insertSubview:self.blueViewController.view atIndex:0];
+    
+//    self.yellowViewController = [[MvsYellowViewController alloc] initWithNibName:@"YellowView" bundle:nil];
+//    [self.view insertSubview:self.yellowViewController.view atIndex:0];
 }
 
 - (void)didReceiveMemoryWarning
@@ -60,6 +63,10 @@
         }
         
         [self.blueViewController.view removeFromSuperview];
+        
+        CGRect frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - 44);
+        self.yellowViewController.view.frame = frame;
+        
         [self.view insertSubview:self.yellowViewController.view atIndex:0];
     } else {
         if(nil == self.blueViewController) {
