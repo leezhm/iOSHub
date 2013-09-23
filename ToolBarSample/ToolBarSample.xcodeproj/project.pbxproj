@@ -16,6 +16,12 @@
 		3769F31A17F00C01002308E6 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3769F31917F00C01002308E6 /* Default.png */; };
 		3769F31C17F00C01002308E6 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3769F31B17F00C01002308E6 /* Default@2x.png */; };
 		3769F31E17F00C01002308E6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3769F31D17F00C01002308E6 /* Default-568h@2x.png */; };
+		3769F32617F00FAC002308E6 /* TbsRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3769F32517F00FAC002308E6 /* TbsRootViewController.m */; };
+		3769F32917F00FBB002308E6 /* TbsFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3769F32817F00FBB002308E6 /* TbsFirstViewController.m */; };
+		3769F32C17F00FC9002308E6 /* TbsSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3769F32B17F00FC9002308E6 /* TbsSecondViewController.m */; };
+		3769F32E17F01012002308E6 /* RootView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3769F32D17F01012002308E6 /* RootView.xib */; };
+		3769F33017F0101E002308E6 /* FirstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3769F32F17F0101E002308E6 /* FirstView.xib */; };
+		3769F33217F01029002308E6 /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3769F33117F01029002308E6 /* SecondView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +38,15 @@
 		3769F31917F00C01002308E6 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		3769F31B17F00C01002308E6 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		3769F31D17F00C01002308E6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3769F32417F00FAC002308E6 /* TbsRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TbsRootViewController.h; sourceTree = "<group>"; };
+		3769F32517F00FAC002308E6 /* TbsRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TbsRootViewController.m; sourceTree = "<group>"; };
+		3769F32717F00FBB002308E6 /* TbsFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TbsFirstViewController.h; sourceTree = "<group>"; };
+		3769F32817F00FBB002308E6 /* TbsFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TbsFirstViewController.m; sourceTree = "<group>"; };
+		3769F32A17F00FC9002308E6 /* TbsSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TbsSecondViewController.h; sourceTree = "<group>"; };
+		3769F32B17F00FC9002308E6 /* TbsSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TbsSecondViewController.m; sourceTree = "<group>"; };
+		3769F32D17F01012002308E6 /* RootView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootView.xib; sourceTree = "<group>"; };
+		3769F32F17F0101E002308E6 /* FirstView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstView.xib; sourceTree = "<group>"; };
+		3769F33117F01029002308E6 /* SecondView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +95,16 @@
 			children = (
 				3769F31617F00C01002308E6 /* TbsAppDelegate.h */,
 				3769F31717F00C01002308E6 /* TbsAppDelegate.m */,
+				3769F32417F00FAC002308E6 /* TbsRootViewController.h */,
+				3769F32517F00FAC002308E6 /* TbsRootViewController.m */,
+				3769F32717F00FBB002308E6 /* TbsFirstViewController.h */,
+				3769F32817F00FBB002308E6 /* TbsFirstViewController.m */,
+				3769F32A17F00FC9002308E6 /* TbsSecondViewController.h */,
+				3769F32B17F00FC9002308E6 /* TbsSecondViewController.m */,
 				3769F30E17F00C01002308E6 /* Supporting Files */,
+				3769F32D17F01012002308E6 /* RootView.xib */,
+				3769F32F17F0101E002308E6 /* FirstView.xib */,
+				3769F33117F01029002308E6 /* SecondView.xib */,
 			);
 			path = ToolBarSample;
 			sourceTree = "<group>";
@@ -155,6 +179,9 @@
 				3769F31A17F00C01002308E6 /* Default.png in Resources */,
 				3769F31C17F00C01002308E6 /* Default@2x.png in Resources */,
 				3769F31E17F00C01002308E6 /* Default-568h@2x.png in Resources */,
+				3769F32E17F01012002308E6 /* RootView.xib in Resources */,
+				3769F33017F0101E002308E6 /* FirstView.xib in Resources */,
+				3769F33217F01029002308E6 /* SecondView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +194,9 @@
 			files = (
 				3769F31417F00C01002308E6 /* main.m in Sources */,
 				3769F31817F00C01002308E6 /* TbsAppDelegate.m in Sources */,
+				3769F32617F00FAC002308E6 /* TbsRootViewController.m in Sources */,
+				3769F32917F00FBB002308E6 /* TbsFirstViewController.m in Sources */,
+				3769F32C17F00FC9002308E6 /* TbsSecondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

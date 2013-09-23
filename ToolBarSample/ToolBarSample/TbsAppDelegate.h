@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class TbsRootViewController;
+
 @interface TbsAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+
+@property (strong, nonatomic) TbsRootViewController * rootViewController;
+
 
 @end

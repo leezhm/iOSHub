@@ -8,13 +8,28 @@
 
 #import "TbsAppDelegate.h"
 
+#import "TbsRootViewController.h"
+
 @implementation TbsAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    self.rootViewController = [[TbsRootViewController alloc] initWithNibName:@"RootView" bundle:nil];
+    
+    UIView * rootView = self.rootViewController.view;
+    CGRect rootViewFrame = rootView.frame;
+    
+    rootViewFrame.origin.y += [UIApplication sharedApplication].statusBarFrame.size.height;
+    rootView.frame = rootViewFrame;
+    
+    self.window.rootViewController = self.rootViewController;
+    //[self.window addSubview:rootView];
+    
+    self.window.rootViewController.view.backgroundColor = [UIColor scrollViewTexturedBackgroundColor];
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
