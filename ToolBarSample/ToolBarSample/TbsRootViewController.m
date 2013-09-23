@@ -58,12 +58,19 @@
 
 - (IBAction)swithView:(id)sender
 {
+    [UIView beginAnimations:@"Switch View" context:nil];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
+    [UIView setAnimationDuration:2.0f];
+    
     if(nil == self.firstViewController.view.superview)
     {
         if(nil == self.firstViewController)
         {
             self.firstViewController = [[TbsFirstViewController alloc] initWithNibName:@"FirstView" bundle:nil];
         }
+        
+        // animation transition
+        [UIView setAnimationTransition:UIViewAnimationTransitionCurlUp forView:self.view cache:YES];
         
         // remove the second
         [self.secondViewController.view removeFromSuperview];
@@ -78,12 +85,16 @@
             self.secondViewController = [[TbsSecondViewController alloc] initWithNibName:@"SecondView" bundle:nil];
         }
         
+        [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:self.view cache:YES];
+        
         // remove the first
         [self.firstViewController.view removeFromSuperview];
         
         // add the second
         [self.view insertSubview:self.secondViewController.view atIndex:0];
     }
+    
+    [UIView commitAnimations];
 }
 
 @end
