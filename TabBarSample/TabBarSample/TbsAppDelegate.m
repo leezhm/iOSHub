@@ -13,7 +13,22 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
     // Override point for customization after application launch.
+    [[NSBundle mainBundle] loadNibNamed:@"TbsTabBarController" owner:self options:nil];
+    
+    UIViewController * rootViewController = self.rootController;
+    
+    CGRect frame = self.rootController.view.frame;
+    frame.origin.y += [UIApplication sharedApplication].statusBarFrame.size.height;
+    
+    rootViewController.view.frame = frame;
+    
+    NSLog(@"Frame(%f, %f, %f, %f", frame.origin.x, frame.origin.y, frame.size.width, frame.size.height);
+    
+    // set the root view controller
+    self.window.rootViewController = self.rootController;
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

@@ -16,6 +16,19 @@
 		3769F35217F0223F002308E6 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3769F35117F0223F002308E6 /* Default.png */; };
 		3769F35417F0223F002308E6 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3769F35317F0223F002308E6 /* Default@2x.png */; };
 		3769F35617F0223F002308E6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3769F35517F0223F002308E6 /* Default-568h@2x.png */; };
+		3769F36217F03674002308E6 /* contract.png in Resources */ = {isa = PBXBuildFile; fileRef = 3769F35E17F03674002308E6 /* contract.png */; };
+		3769F36317F03674002308E6 /* favorite.png in Resources */ = {isa = PBXBuildFile; fileRef = 3769F35F17F03674002308E6 /* favorite.png */; };
+		3769F36417F03674002308E6 /* mostviewed.png in Resources */ = {isa = PBXBuildFile; fileRef = 3769F36017F03674002308E6 /* mostviewed.png */; };
+		3769F36517F03674002308E6 /* recent.png in Resources */ = {isa = PBXBuildFile; fileRef = 3769F36117F03674002308E6 /* recent.png */; };
+		3769F36817F038F1002308E6 /* TbsRedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3769F36717F038F1002308E6 /* TbsRedViewController.m */; };
+		3769F36B17F03908002308E6 /* TbsGreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3769F36A17F03908002308E6 /* TbsGreenViewController.m */; };
+		3769F36E17F03913002308E6 /* TbsBlueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3769F36D17F03913002308E6 /* TbsBlueViewController.m */; };
+		3769F37117F03938002308E6 /* TbsYellowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3769F37017F03938002308E6 /* TbsYellowViewController.m */; };
+		3769F37417F03AC6002308E6 /* RedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3769F37317F03AC6002308E6 /* RedView.xib */; };
+		3769F37617F03AD4002308E6 /* GreenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3769F37517F03AD4002308E6 /* GreenView.xib */; };
+		3769F37817F03ADC002308E6 /* BlueView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3769F37717F03ADC002308E6 /* BlueView.xib */; };
+		3769F37A17F03AE5002308E6 /* YellowView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3769F37917F03AE5002308E6 /* YellowView.xib */; };
+		3769F37C17F03B39002308E6 /* TbsTabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3769F37B17F03B39002308E6 /* TbsTabBarController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +45,23 @@
 		3769F35117F0223F002308E6 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		3769F35317F0223F002308E6 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		3769F35517F0223F002308E6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3769F35E17F03674002308E6 /* contract.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contract.png; sourceTree = "<group>"; };
+		3769F35F17F03674002308E6 /* favorite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favorite.png; sourceTree = "<group>"; };
+		3769F36017F03674002308E6 /* mostviewed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mostviewed.png; sourceTree = "<group>"; };
+		3769F36117F03674002308E6 /* recent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recent.png; sourceTree = "<group>"; };
+		3769F36617F038F1002308E6 /* TbsRedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TbsRedViewController.h; sourceTree = "<group>"; };
+		3769F36717F038F1002308E6 /* TbsRedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TbsRedViewController.m; sourceTree = "<group>"; };
+		3769F36917F03908002308E6 /* TbsGreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TbsGreenViewController.h; path = TabBarSample/TbsGreenViewController.h; sourceTree = "<group>"; };
+		3769F36A17F03908002308E6 /* TbsGreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TbsGreenViewController.m; path = TabBarSample/TbsGreenViewController.m; sourceTree = "<group>"; };
+		3769F36C17F03913002308E6 /* TbsBlueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TbsBlueViewController.h; path = TabBarSample/TbsBlueViewController.h; sourceTree = "<group>"; };
+		3769F36D17F03913002308E6 /* TbsBlueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TbsBlueViewController.m; path = TabBarSample/TbsBlueViewController.m; sourceTree = "<group>"; };
+		3769F36F17F03938002308E6 /* TbsYellowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TbsYellowViewController.h; path = TabBarSample/TbsYellowViewController.h; sourceTree = "<group>"; };
+		3769F37017F03938002308E6 /* TbsYellowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TbsYellowViewController.m; path = TabBarSample/TbsYellowViewController.m; sourceTree = "<group>"; };
+		3769F37317F03AC6002308E6 /* RedView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RedView.xib; sourceTree = "<group>"; };
+		3769F37517F03AD4002308E6 /* GreenView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GreenView.xib; sourceTree = "<group>"; };
+		3769F37717F03ADC002308E6 /* BlueView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BlueView.xib; sourceTree = "<group>"; };
+		3769F37917F03AE5002308E6 /* YellowView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YellowView.xib; sourceTree = "<group>"; };
+		3769F37B17F03B39002308E6 /* TbsTabBarController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TbsTabBarController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +81,8 @@
 		3769F33317F0223F002308E6 = {
 			isa = PBXGroup;
 			children = (
+				3769F37217F03A9C002308E6 /* TabBarApplication */,
+				3769F35C17F03614002308E6 /* Resources */,
 				3769F34517F0223F002308E6 /* TabBarSample */,
 				3769F33E17F0223F002308E6 /* Frameworks */,
 				3769F33D17F0223F002308E6 /* Products */,
@@ -81,6 +113,7 @@
 				3769F34E17F0223F002308E6 /* TbsAppDelegate.h */,
 				3769F34F17F0223F002308E6 /* TbsAppDelegate.m */,
 				3769F34617F0223F002308E6 /* Supporting Files */,
+				3769F37B17F03B39002308E6 /* TbsTabBarController.xib */,
 			);
 			path = TabBarSample;
 			sourceTree = "<group>";
@@ -97,6 +130,44 @@
 				3769F35517F0223F002308E6 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3769F35C17F03614002308E6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3769F35D17F03674002308E6 /* Images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		3769F35D17F03674002308E6 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				3769F35E17F03674002308E6 /* contract.png */,
+				3769F35F17F03674002308E6 /* favorite.png */,
+				3769F36017F03674002308E6 /* mostviewed.png */,
+				3769F36117F03674002308E6 /* recent.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		3769F37217F03A9C002308E6 /* TabBarApplication */ = {
+			isa = PBXGroup;
+			children = (
+				3769F36617F038F1002308E6 /* TbsRedViewController.h */,
+				3769F36717F038F1002308E6 /* TbsRedViewController.m */,
+				3769F36917F03908002308E6 /* TbsGreenViewController.h */,
+				3769F36A17F03908002308E6 /* TbsGreenViewController.m */,
+				3769F36C17F03913002308E6 /* TbsBlueViewController.h */,
+				3769F36D17F03913002308E6 /* TbsBlueViewController.m */,
+				3769F36F17F03938002308E6 /* TbsYellowViewController.h */,
+				3769F37017F03938002308E6 /* TbsYellowViewController.m */,
+				3769F37317F03AC6002308E6 /* RedView.xib */,
+				3769F37517F03AD4002308E6 /* GreenView.xib */,
+				3769F37717F03ADC002308E6 /* BlueView.xib */,
+				3769F37917F03AE5002308E6 /* YellowView.xib */,
+			);
+			name = TabBarApplication;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +226,15 @@
 				3769F35217F0223F002308E6 /* Default.png in Resources */,
 				3769F35417F0223F002308E6 /* Default@2x.png in Resources */,
 				3769F35617F0223F002308E6 /* Default-568h@2x.png in Resources */,
+				3769F36217F03674002308E6 /* contract.png in Resources */,
+				3769F36317F03674002308E6 /* favorite.png in Resources */,
+				3769F36417F03674002308E6 /* mostviewed.png in Resources */,
+				3769F36517F03674002308E6 /* recent.png in Resources */,
+				3769F37417F03AC6002308E6 /* RedView.xib in Resources */,
+				3769F37617F03AD4002308E6 /* GreenView.xib in Resources */,
+				3769F37817F03ADC002308E6 /* BlueView.xib in Resources */,
+				3769F37A17F03AE5002308E6 /* YellowView.xib in Resources */,
+				3769F37C17F03B39002308E6 /* TbsTabBarController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +247,10 @@
 			files = (
 				3769F34C17F0223F002308E6 /* main.m in Sources */,
 				3769F35017F0223F002308E6 /* TbsAppDelegate.m in Sources */,
+				3769F36817F038F1002308E6 /* TbsRedViewController.m in Sources */,
+				3769F36B17F03908002308E6 /* TbsGreenViewController.m in Sources */,
+				3769F36E17F03913002308E6 /* TbsBlueViewController.m in Sources */,
+				3769F37117F03938002308E6 /* TbsYellowViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
