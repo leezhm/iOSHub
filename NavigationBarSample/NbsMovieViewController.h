@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class NbsMovieDetailViewController;
+
 @interface NbsMovieViewController : UITableViewController
+
+@property (strong, nonatomic) NSArray * moviesList;
 
 @end

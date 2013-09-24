@@ -16,6 +16,10 @@
 		3769F39C17F043A8002308E6 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3769F39B17F043A8002308E6 /* Default.png */; };
 		3769F39E17F043A8002308E6 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3769F39D17F043A8002308E6 /* Default@2x.png */; };
 		3769F3A017F043A8002308E6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3769F39F17F043A8002308E6 /* Default-568h@2x.png */; };
+		3769F3AB17F04520002308E6 /* NbsRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3769F3AA17F0451F002308E6 /* NbsRootViewController.m */; };
+		3769F3AE17F072A4002308E6 /* NbsMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3769F3AD17F072A4002308E6 /* NbsMovieViewController.m */; };
+		3769F3B217F072CC002308E6 /* NbsMovieDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3769F3B017F072CC002308E6 /* NbsMovieDetailViewController.m */; };
+		3769F3B317F072CC002308E6 /* NbsMovieDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3769F3B117F072CC002308E6 /* NbsMovieDetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,13 @@
 		3769F39B17F043A8002308E6 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		3769F39D17F043A8002308E6 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		3769F39F17F043A8002308E6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3769F3A917F0451F002308E6 /* NbsRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NbsRootViewController.h; sourceTree = "<group>"; };
+		3769F3AA17F0451F002308E6 /* NbsRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NbsRootViewController.m; sourceTree = "<group>"; };
+		3769F3AC17F072A4002308E6 /* NbsMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NbsMovieViewController.h; sourceTree = "<group>"; };
+		3769F3AD17F072A4002308E6 /* NbsMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NbsMovieViewController.m; sourceTree = "<group>"; };
+		3769F3AF17F072CC002308E6 /* NbsMovieDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NbsMovieDetailViewController.h; sourceTree = "<group>"; };
+		3769F3B017F072CC002308E6 /* NbsMovieDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NbsMovieDetailViewController.m; sourceTree = "<group>"; };
+		3769F3B117F072CC002308E6 /* NbsMovieDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NbsMovieDetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +62,11 @@
 		3769F37D17F043A7002308E6 = {
 			isa = PBXGroup;
 			children = (
+				3769F3AF17F072CC002308E6 /* NbsMovieDetailViewController.h */,
+				3769F3B017F072CC002308E6 /* NbsMovieDetailViewController.m */,
+				3769F3B117F072CC002308E6 /* NbsMovieDetailViewController.xib */,
+				3769F3AC17F072A4002308E6 /* NbsMovieViewController.h */,
+				3769F3AD17F072A4002308E6 /* NbsMovieViewController.m */,
 				3769F38F17F043A8002308E6 /* NavigationBarSample */,
 				3769F38817F043A8002308E6 /* Frameworks */,
 				3769F38717F043A8002308E6 /* Products */,
@@ -81,6 +97,8 @@
 				3769F39817F043A8002308E6 /* NbsAppDelegate.h */,
 				3769F39917F043A8002308E6 /* NbsAppDelegate.m */,
 				3769F39017F043A8002308E6 /* Supporting Files */,
+				3769F3A917F0451F002308E6 /* NbsRootViewController.h */,
+				3769F3AA17F0451F002308E6 /* NbsRootViewController.m */,
 			);
 			path = NavigationBarSample;
 			sourceTree = "<group>";
@@ -155,6 +173,7 @@
 				3769F39C17F043A8002308E6 /* Default.png in Resources */,
 				3769F39E17F043A8002308E6 /* Default@2x.png in Resources */,
 				3769F3A017F043A8002308E6 /* Default-568h@2x.png in Resources */,
+				3769F3B317F072CC002308E6 /* NbsMovieDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +186,9 @@
 			files = (
 				3769F39617F043A8002308E6 /* main.m in Sources */,
 				3769F39A17F043A8002308E6 /* NbsAppDelegate.m in Sources */,
+				3769F3AB17F04520002308E6 /* NbsRootViewController.m in Sources */,
+				3769F3AE17F072A4002308E6 /* NbsMovieViewController.m in Sources */,
+				3769F3B217F072CC002308E6 /* NbsMovieDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

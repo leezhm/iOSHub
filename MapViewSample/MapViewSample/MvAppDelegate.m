@@ -1,29 +1,23 @@
 //
-//  NbsAppDelegate.m
-//  NavigationBarSample
+//  MvAppDelegate.m
+//  MapViewSample
 //
-//  Created by Hsee.com on 9/23/13.
+//  Created by Hsee.com on 9/24/13.
 //  Copyright (c) 2013 code4fun.cn. All rights reserved.
 //
 
-#import "NbsAppDelegate.h"
+#import "MvAppDelegate.h"
 
-#import "NbsRootViewController.h"
+#import "MvViewController.h"
 
-@implementation NbsAppDelegate
+@implementation MvAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    
     // Override point for customization after application launch.
-    NbsRootViewController * rootViewController = [[NbsRootViewController alloc] initWithStyle:UITableViewStylePlain];
-    self.navigatonController = [[UINavigationController alloc] initWithRootViewController:rootViewController];
-    
-    self.window.rootViewController = rootViewController;
-    [self.window addSubview:self.navigatonController.view];
-    
-    self.window.backgroundColor = [UIColor whiteColor];
+    self.viewController = [[MvViewController alloc] initWithNibName:@"MvViewController" bundle:nil];
+    self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;
 }

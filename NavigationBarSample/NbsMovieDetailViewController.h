@@ -10,4 +10,8 @@
 
 @interface NbsMovieDetailViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UILabel *movieDetailLabel;
+
+@property (copy, nonatomic) NSString * message;
+
 @end

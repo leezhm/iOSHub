@@ -8,7 +8,11 @@
 
 #import "NbsRootViewController.h"
 
+#import "NbsMovieViewController.h"
+
 @interface NbsRootViewController ()
+
+@property (strong, nonatomic) NSArray * controllerList;
 
 @end
 
@@ -32,6 +36,16 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    self.title = @"分类";
+    
+    NSMutableArray * array = [[NSMutableArray alloc] init];
+    
+    NbsMovieViewController * movieViewController = [[NbsMovieViewController alloc] initWithStyle:UITableViewStylePlain];
+    movieViewController.title = @"电影";
+    [array addObject:movieViewController];
+    
+    self.controllerList = array;
 }
 
 - (void)didReceiveMemoryWarning
@@ -46,22 +60,35 @@
 {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+
+    return [self.controllerList count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    static NSString *RootTableViewCell = @"RootTableViewCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:RootTableViewCell];
     
     // Configure the cell...
+    if (nil == cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:RootTableViewCell];
+    }
+    
+    NSUInteger row = [indexPath row];
+    UITableViewController * controller = [self.controllerList objectAtIndex:row];
+    
+    // set for every row
+    cell.textLabel.text = controller.title;
+    
+    // set the accessoryType for every row
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
     return cell;
 }
@@ -116,6 +143,12 @@
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
+    
+    NSUInteger row = [indexPath row];
+    
+    UITableViewController * nextController = [self.controllerList objectAtIndex:row];
+    
+    [self.navigationController pushViewController:nextController animated:YES];
 }
 
 @end
