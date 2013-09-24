@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MvViewController : UIViewController
+#import <CoreLocation/CoreLocation.h>
+#import <MapKit/MapKit.h>
+
+@interface MvViewController : UIViewController <MKMapViewDelegate>
 
 @end
