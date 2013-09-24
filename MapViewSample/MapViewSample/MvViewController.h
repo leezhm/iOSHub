@@ -11,6 +11,6 @@
 #import <CoreLocation/CoreLocation.h>
 #import <MapKit/MapKit.h>
 
-@interface MvViewController : UIViewController <MKMapViewDelegate>
+@interface MvViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate>
 
 @end
