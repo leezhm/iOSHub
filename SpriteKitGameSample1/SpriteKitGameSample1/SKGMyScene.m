@@ -8,22 +8,39 @@
 
 #import "SKGMyScene.h"
 
+@interface SKGMyScene ()
+
+/// for player
+@property (nonatomic) SKSpriteNode * player;
+
+@end
+
 @implementation SKGMyScene
 
 -(id)initWithSize:(CGSize)size {    
     if (self = [super initWithSize:size]) {
         /* Setup your scene here */
         
-        self.backgroundColor = [SKColor colorWithRed:0.15 green:0.15 blue:0.3 alpha:1.0];
+//        self.backgroundColor = [SKColor colorWithRed:0.15 green:0.15 blue:0.3 alpha:1.0];
+//        
+//        SKLabelNode *myLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
+//        
+//        myLabel.text = @"Hello, World!";
+//        myLabel.fontSize = 30;
+//        myLabel.position = CGPointMake(CGRectGetMidX(self.frame),
+//                                       CGRectGetMidY(self.frame));
+//        
+//        [self addChild:myLabel];
         
-        SKLabelNode *myLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
+        NSLog(@"Size: %@", NSStringFromCGSize(size));
         
-        myLabel.text = @"Hello, World!";
-        myLabel.fontSize = 30;
-        myLabel.position = CGPointMake(CGRectGetMidX(self.frame),
-                                       CGRectGetMidY(self.frame));
+        self.backgroundColor = [SKColor colorWithRed:1.0f green:1.0f blue:1.0f alpha:1.0f];
         
-        [self addChild:myLabel];
+        self.player = [SKSpriteNode spriteNodeWithImageNamed:@"player"];
+        self.player.position = CGPointMake(CGRectGetMidX(self.frame),
+                                           CGRectGetMidY(self.frame));
+        
+        [self addChild:self.player];
     }
     return self;
 }
