@@ -10,10 +10,11 @@
 
 @interface MvsBlueViewController ()
 
+@property (weak, nonatomic) IBOutlet UIButton *btnPressMe;
+
 @end
 
 @implementation MvsBlueViewController
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -36,6 +37,25 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)blueButtonPress
+{
+    NSLog(@"Blue Button (%f, %f, %f, %f)", self.btnPressMe.frame.origin.x, self.btnPressMe.frame.origin.y,
+          self.btnPressMe.frame.size.width, self.btnPressMe.frame.size.height);
+    
+    NSLog(@"Blue View (%f, %f, %f, %f)", self.view.frame.origin.x, self.view.frame.origin.y,
+          self.view.frame.size.width, self.view.frame.size.height);
+    
+    NSLog(@"Supper View (%f, %f, %f, %f)", self.view.superview.frame.origin.x, self.view.superview.frame.origin.y,
+          self.view.superview.frame.size.width, self.view.superview.frame.size.height);
+    
+    UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Blue View Button Pressed"
+                                                     message:@"You pressed the button on the blue view"
+                                                    delegate:nil
+                                           cancelButtonTitle:@"Yes, I did."
+                                           otherButtonTitles:nil];
+    [alert show]; // show the alert popup window
 }
 
 @end

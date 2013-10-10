@@ -10,4 +10,6 @@
 
 @interface MvsYellowViewController : UIViewController
 
+- (IBAction)yellowButtonPress;
+
 @end
