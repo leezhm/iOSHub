@@ -8,6 +8,8 @@
 
 #import "SKGMyScene.h"
 
+#import "SKGameOverScene.h"
+
 #pragma mark - Vector Caculate
 static inline CGPoint rwAdd(CGPoint a, CGPoint b) {
     return CGPointMake(a.x + b.x, a.y + b.y);
@@ -42,6 +44,8 @@ static const uint32_t monsterCategory = 0x1 << 1;
 
 @property (nonatomic) NSTimeInterval lastSpawnTimeInterval;
 @property (nonatomic) NSTimeInterval lastUpdateTimeInterval;
+
+@property (nonatomic) int monstersDestroyed;
 
 @end
 
@@ -201,7 +205,14 @@ static const uint32_t monsterCategory = 0x1 << 1;
     // Create the actions
     SKAction * actionMove = [SKAction moveTo:CGPointMake(-monster.size.width/2, actualY) duration:actualDuration];
     SKAction * actionMoveDone = [SKAction removeFromParent];
-    [monster runAction:[SKAction sequence:@[actionMove, actionMoveDone]]];
+//    [monster runAction:[SKAction sequence:@[actionMove, actionMoveDone]]];
+    
+    SKAction * loseAction = [SKAction runBlock:^{
+        SKTransition *reveal = [SKTransition flipHorizontalWithDuration:0.5];
+        SKScene * gameOverScene = [[SKGameOverScene alloc] initWithSize:self.size won:NO];
+        [self.view presentScene:gameOverScene transition: reveal];
+    }];
+    [monster runAction:[SKAction sequence:@[actionMove, loseAction, actionMoveDone]]];
 }
 
 #pragma mark - Collision Event 
@@ -210,6 +221,13 @@ static const uint32_t monsterCategory = 0x1 << 1;
     NSLog(@"Hit ...");
     [projectile removeFromParent];
     [monster removeFromParent];
+    
+    self.monstersDestroyed++;
+    if (self.monstersDestroyed >= 30) {
+        SKTransition *reveal = [SKTransition flipHorizontalWithDuration:0.5];
+        SKScene * gameOverScene = [[SKGameOverScene alloc] initWithSize:self.size won:YES];
+        [self.view presentScene:gameOverScene transition: reveal];
+    }
 }
 
 
