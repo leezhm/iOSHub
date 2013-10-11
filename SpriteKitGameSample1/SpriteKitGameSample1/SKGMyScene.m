@@ -31,7 +31,11 @@ static inline CGPoint rwNormalize(CGPoint a) {
     return CGPointMake(a.x / length, a.y / length);
 }
 
-@interface SKGMyScene ()
+static const uint32_t projectileCategory = 0x1 << 0;
+static const uint32_t monsterCategory = 0x1 << 1;
+
+
+@interface SKGMyScene () <SKPhysicsContactDelegate>
 
 /// for player
 @property (nonatomic) SKSpriteNode * player;
@@ -67,6 +71,9 @@ static inline CGPoint rwNormalize(CGPoint a) {
                                            CGRectGetMidY(self.frame));
         
         [self addChild:self.player];
+        
+        self.physicsWorld.gravity = CGVectorMake(0, 0);
+        self.physicsWorld.contactDelegate = self;
     }
     return self;
 }
@@ -98,6 +105,14 @@ static inline CGPoint rwNormalize(CGPoint a) {
     // init the projectile
     SKSpriteNode * projectile = [SKSpriteNode spriteNodeWithImageNamed:@"projectile"];
     projectile.position = self.player.position;
+    
+    //
+    projectile.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:projectile.size.width/2];
+    projectile.physicsBody.dynamic = YES;
+    projectile.physicsBody.categoryBitMask = projectileCategory;
+    projectile.physicsBody.contactTestBitMask = monsterCategory;
+    projectile.physicsBody.collisionBitMask = 0;
+    projectile.physicsBody.usesPreciseCollisionDetection = YES;
     
     // caculate the delta
     CGPoint offset = rwSub(location, projectile.position);
@@ -156,6 +171,13 @@ static inline CGPoint rwNormalize(CGPoint a) {
     // create monster
     SKSpriteNode * monster = [SKSpriteNode spriteNodeWithImageNamed:@"monster"];
     
+    // set physics for monster
+    monster.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:monster.size];
+    monster.physicsBody.dynamic = YES;
+    monster.physicsBody.categoryBitMask = monsterCategory;
+    monster.physicsBody.contactTestBitMask = projectileCategory;
+    monster.physicsBody.collisionBitMask = 0;
+    
     // Determine where to spawn the monster along the Y axis
     int minY = monster.size.height / 2;
     int maxY = self.frame.size.height - monster.size.height / 2;
@@ -177,6 +199,34 @@ static inline CGPoint rwNormalize(CGPoint a) {
     SKAction * actionMove = [SKAction moveTo:CGPointMake(-monster.size.width/2, actualY) duration:actualDuration];
     SKAction * actionMoveDone = [SKAction removeFromParent];
     [monster runAction:[SKAction sequence:@[actionMove, actionMoveDone]]];
+}
+
+#pragma mark - Collision Event 
+-(void)projectile:(SKSpriteNode *)projectile didCollideWithMonster:(SKSpriteNode *)monster {
+
+    NSLog(@"Hit ...");
+    [projectile removeFromParent];
+    [monster removeFromParent];
+}
+
+
+-(void)didBeginContact:(SKPhysicsContact *)contract {
+    //
+    SKPhysicsBody * firstBody , * secondBody;
+    
+    if (contract.bodyA.categoryBitMask < contract.bodyB.categoryBitMask) {
+        firstBody = contract.bodyA;
+        secondBody = contract.bodyB;
+    } else {
+        firstBody = contract.bodyB;
+        secondBody = contract.bodyA;
+    }
+    
+    if ((firstBody.categoryBitMask & projectileCategory) != 0 &&
+        (secondBody.categoryBitMask & monsterCategory) != 0) {
+        
+        [self projectile:(SKSpriteNode *)firstBody.node didCollideWithMonster:(SKSpriteNode *)secondBody.node];
+    }
 }
 
 @end
