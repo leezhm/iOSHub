@@ -18,6 +18,10 @@
 		374E95BB17F4760D004518DB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 374E95BA17F4760D004518DB /* Default-568h@2x.png */; };
 		374E95BE17F4760D004518DB /* VtViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 374E95BD17F4760D004518DB /* VtViewController.m */; };
 		374E95C117F4760D004518DB /* VtViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 374E95BF17F4760D004518DB /* VtViewController.xib */; };
+		374E95CA17F47663004518DB /* VtFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 374E95C817F47663004518DB /* VtFirstViewController.m */; };
+		374E95CB17F47663004518DB /* VtFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 374E95C917F47663004518DB /* VtFirstViewController.xib */; };
+		374E95CF17F4767A004518DB /* VtSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 374E95CD17F4767A004518DB /* VtSecondViewController.m */; };
+		374E95D017F4767A004518DB /* VtSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 374E95CE17F4767A004518DB /* VtSecondViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +41,12 @@
 		374E95BC17F4760D004518DB /* VtViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VtViewController.h; sourceTree = "<group>"; };
 		374E95BD17F4760D004518DB /* VtViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VtViewController.m; sourceTree = "<group>"; };
 		374E95C017F4760D004518DB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/VtViewController.xib; sourceTree = "<group>"; };
+		374E95C717F47663004518DB /* VtFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VtFirstViewController.h; sourceTree = "<group>"; };
+		374E95C817F47663004518DB /* VtFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VtFirstViewController.m; sourceTree = "<group>"; };
+		374E95C917F47663004518DB /* VtFirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VtFirstViewController.xib; sourceTree = "<group>"; };
+		374E95CC17F4767A004518DB /* VtSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VtSecondViewController.h; sourceTree = "<group>"; };
+		374E95CD17F4767A004518DB /* VtSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VtSecondViewController.m; sourceTree = "<group>"; };
+		374E95CE17F4767A004518DB /* VtSecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VtSecondViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +99,12 @@
 				374E95BD17F4760D004518DB /* VtViewController.m */,
 				374E95BF17F4760D004518DB /* VtViewController.xib */,
 				374E95AB17F4760D004518DB /* Supporting Files */,
+				374E95C717F47663004518DB /* VtFirstViewController.h */,
+				374E95C817F47663004518DB /* VtFirstViewController.m */,
+				374E95C917F47663004518DB /* VtFirstViewController.xib */,
+				374E95CC17F4767A004518DB /* VtSecondViewController.h */,
+				374E95CD17F4767A004518DB /* VtSecondViewController.m */,
+				374E95CE17F4767A004518DB /* VtSecondViewController.xib */,
 			);
 			path = ViewTransitionSample;
 			sourceTree = "<group>";
@@ -164,6 +180,8 @@
 				374E95B917F4760D004518DB /* Default@2x.png in Resources */,
 				374E95BB17F4760D004518DB /* Default-568h@2x.png in Resources */,
 				374E95C117F4760D004518DB /* VtViewController.xib in Resources */,
+				374E95CB17F47663004518DB /* VtFirstViewController.xib in Resources */,
+				374E95D017F4767A004518DB /* VtSecondViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +195,8 @@
 				374E95B117F4760D004518DB /* main.m in Sources */,
 				374E95B517F4760D004518DB /* VtAppDelegate.m in Sources */,
 				374E95BE17F4760D004518DB /* VtViewController.m in Sources */,
+				374E95CA17F47663004518DB /* VtFirstViewController.m in Sources */,
+				374E95CF17F4767A004518DB /* VtSecondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
