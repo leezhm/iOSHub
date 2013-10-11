@@ -9,6 +9,14 @@
 #import "SKGViewController.h"
 #import "SKGMyScene.h"
 
+@import AVFoundation;
+
+@interface SKGViewController ()
+
+@property (nonatomic) AVAudioPlayer * backgroundMusicPlayer;
+
+@end
+
 @implementation SKGViewController
 
 - (void)viewDidLoad
@@ -38,6 +46,13 @@
 
 - (void)viewWillLayoutSubviews
 {
+    NSError * error;
+    NSURL * backgroundMusicURL = [[NSBundle mainBundle] URLForResource:@"background-music-aac" withExtension:@"caf"];
+    self.backgroundMusicPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:backgroundMusicURL error:&error];
+    self.backgroundMusicPlayer.numberOfLoops = -1;
+    [self.backgroundMusicPlayer prepareToPlay];
+    [self.backgroundMusicPlayer play];
+    
     // Configure the view.
     SKView * skView = (SKView *)self.view;
     if (!skView.scene) {
