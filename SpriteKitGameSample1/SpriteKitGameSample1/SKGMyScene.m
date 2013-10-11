@@ -139,6 +139,9 @@ static const uint32_t monsterCategory = 0x1 << 1;
     SKAction * actionMove = [SKAction moveTo:realDest duration:realMoveDuration];
     SKAction * actionMoveDone = [SKAction removeFromParent];
     [projectile runAction:[SKAction sequence:@[actionMove, actionMoveDone]]];
+    
+    // play sound effect
+    [self runAction:[SKAction playSoundFileNamed:@"pew-pew-lei.caf" waitForCompletion:NO]];
 }
 
 -(void)update:(CFTimeInterval)currentTime {
