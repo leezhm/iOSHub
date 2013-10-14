@@ -8,11 +8,49 @@
 
 #import "RayAppDelegate.h"
 
-@implementation RayAppDelegate
+#import "RayPlayer.h"
+#import "RayPlayersViewController.h"
+
+@implementation RayAppDelegate {
+    
+    NSMutableArray * players;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    // init data
+    players = [NSMutableArray arrayWithCapacity:20];
+    
+    RayPlayer * player = [RayPlayer new];
+    player.name = @"Hsee Shanghai";
+    player.game = @"Clash of Clan";
+    player.rating = 4;
+    [players addObject:player];
+    
+    player = [RayPlayer new];
+    player.name = @"Jerry li";
+    player.game = @"Spin the Bottle";
+    player.rating = 10;
+    [players addObject:player];
+    
+    player = [RayPlayer new];
+    player.name = @"Dave Brubeck";
+    player.game = @"Tic-Tac-Toe";
+    player.rating = 8;
+    [players addObject:player];
+    
+    ///
+    ///
+    ///
+    UITabBarController * tabBarController = (UITabBarController *)self.window.rootViewController;
+    UINavigationController * navigationController = [[tabBarController viewControllers] objectAtIndex:0];
+    RayPlayersViewController * playerViewController = [[navigationController viewControllers] objectAtIndex:0];
+    
+    playerViewController.players = players;
+    
+    
     return YES;
 }
 							

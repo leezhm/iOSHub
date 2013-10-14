@@ -21,6 +21,12 @@
 		37F01841180B879900F75FD2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F01823180B879800F75FD2 /* UIKit.framework */; };
 		37F01849180B879900F75FD2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 37F01847180B879900F75FD2 /* InfoPlist.strings */; };
 		37F0184B180B879900F75FD2 /* RayStoryboardSample1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F0184A180B879900F75FD2 /* RayStoryboardSample1Tests.m */; };
+		37F0185A180B9F3C00F75FD2 /* Gestures.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F01856180B9F3C00F75FD2 /* Gestures.png */; };
+		37F0185B180B9F3C00F75FD2 /* Gestures@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F01857180B9F3C00F75FD2 /* Gestures@2x.png */; };
+		37F0185C180B9F3C00F75FD2 /* Players.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F01858180B9F3C00F75FD2 /* Players.png */; };
+		37F0185D180B9F3C00F75FD2 /* Players@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F01859180B9F3C00F75FD2 /* Players@2x.png */; };
+		37F01860180BADD700F75FD2 /* RayPlayersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F0185F180BADD700F75FD2 /* RayPlayersViewController.m */; };
+		37F01863180BB08100F75FD2 /* RayPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F01862180BB08100F75FD2 /* RayPlayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,14 @@
 		37F01846180B879900F75FD2 /* RayStoryboardSample1Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RayStoryboardSample1Tests-Info.plist"; sourceTree = "<group>"; };
 		37F01848180B879900F75FD2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		37F0184A180B879900F75FD2 /* RayStoryboardSample1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RayStoryboardSample1Tests.m; sourceTree = "<group>"; };
+		37F01856180B9F3C00F75FD2 /* Gestures.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Gestures.png; sourceTree = "<group>"; };
+		37F01857180B9F3C00F75FD2 /* Gestures@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Gestures@2x.png"; sourceTree = "<group>"; };
+		37F01858180B9F3C00F75FD2 /* Players.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Players.png; sourceTree = "<group>"; };
+		37F01859180B9F3C00F75FD2 /* Players@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Players@2x.png"; sourceTree = "<group>"; };
+		37F0185E180BADD700F75FD2 /* RayPlayersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RayPlayersViewController.h; sourceTree = "<group>"; };
+		37F0185F180BADD700F75FD2 /* RayPlayersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RayPlayersViewController.m; sourceTree = "<group>"; };
+		37F01861180BB08100F75FD2 /* RayPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RayPlayer.h; sourceTree = "<group>"; };
+		37F01862180BB08100F75FD2 /* RayPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RayPlayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +96,7 @@
 		37F01813180B879800F75FD2 = {
 			isa = PBXGroup;
 			children = (
+				37F01854180B9F3C00F75FD2 /* Resources */,
 				37F01825180B879800F75FD2 /* RayStoryboardSample1 */,
 				37F01844180B879900F75FD2 /* RayStoryboardSample1Tests */,
 				37F0181E180B879800F75FD2 /* Frameworks */,
@@ -114,6 +129,10 @@
 			children = (
 				37F0182E180B879800F75FD2 /* RayAppDelegate.h */,
 				37F0182F180B879800F75FD2 /* RayAppDelegate.m */,
+				37F0185E180BADD700F75FD2 /* RayPlayersViewController.h */,
+				37F0185F180BADD700F75FD2 /* RayPlayersViewController.m */,
+				37F01861180BB08100F75FD2 /* RayPlayer.h */,
+				37F01862180BB08100F75FD2 /* RayPlayer.m */,
 				37F01831180B879800F75FD2 /* Main.storyboard */,
 				37F01834180B879800F75FD2 /* RayViewController.h */,
 				37F01835180B879900F75FD2 /* RayViewController.m */,
@@ -150,6 +169,25 @@
 				37F01847180B879900F75FD2 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		37F01854180B9F3C00F75FD2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				37F01855180B9F3C00F75FD2 /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		37F01855180B9F3C00F75FD2 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				37F01856180B9F3C00F75FD2 /* Gestures.png */,
+				37F01857180B9F3C00F75FD2 /* Gestures@2x.png */,
+				37F01858180B9F3C00F75FD2 /* Players.png */,
+				37F01859180B9F3C00F75FD2 /* Players@2x.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +267,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37F0185C180B9F3C00F75FD2 /* Players.png in Resources */,
 				37F01838180B879900F75FD2 /* Images.xcassets in Resources */,
+				37F0185A180B9F3C00F75FD2 /* Gestures.png in Resources */,
 				37F0182A180B879800F75FD2 /* InfoPlist.strings in Resources */,
+				37F0185B180B9F3C00F75FD2 /* Gestures@2x.png in Resources */,
 				37F01833180B879800F75FD2 /* Main.storyboard in Resources */,
+				37F0185D180B9F3C00F75FD2 /* Players@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,8 +292,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37F01860180BADD700F75FD2 /* RayPlayersViewController.m in Sources */,
 				37F0182C180B879800F75FD2 /* main.m in Sources */,
 				37F01836180B879900F75FD2 /* RayViewController.m in Sources */,
+				37F01863180BB08100F75FD2 /* RayPlayer.m in Sources */,
 				37F01830180B879800F75FD2 /* RayAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
