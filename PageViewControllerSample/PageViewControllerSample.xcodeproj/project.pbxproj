@@ -21,6 +21,7 @@
 		37B4B95518114C90004B9F9B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B4B93718114C90004B9F9B /* UIKit.framework */; };
 		37B4B95D18114C90004B9F9B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 37B4B95B18114C90004B9F9B /* InfoPlist.strings */; };
 		37B4B95F18114C90004B9F9B /* PageViewControllerSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B4B95E18114C90004B9F9B /* PageViewControllerSampleTests.m */; };
+		37B4B96A18115D18004B9F9B /* PVCPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B4B96918115D18004B9F9B /* PVCPageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		37B4B95A18114C90004B9F9B /* PageViewControllerSampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PageViewControllerSampleTests-Info.plist"; sourceTree = "<group>"; };
 		37B4B95C18114C90004B9F9B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		37B4B95E18114C90004B9F9B /* PageViewControllerSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PageViewControllerSampleTests.m; sourceTree = "<group>"; };
+		37B4B96818115D18004B9F9B /* PVCPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVCPageViewController.h; sourceTree = "<group>"; };
+		37B4B96918115D18004B9F9B /* PVCPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVCPageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				37B4B94918114C90004B9F9B /* PVCViewController.m */,
 				37B4B94B18114C90004B9F9B /* Images.xcassets */,
 				37B4B93A18114C90004B9F9B /* Supporting Files */,
+				37B4B96818115D18004B9F9B /* PVCPageViewController.h */,
+				37B4B96918115D18004B9F9B /* PVCPageViewController.m */,
 			);
 			path = PageViewControllerSample;
 			sourceTree = "<group>";
@@ -253,6 +258,7 @@
 				37B4B94418114C90004B9F9B /* PVCAppDelegate.m in Sources */,
 				37B4B94018114C90004B9F9B /* main.m in Sources */,
 				37B4B94A18114C90004B9F9B /* PVCViewController.m in Sources */,
+				37B4B96A18115D18004B9F9B /* PVCPageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
