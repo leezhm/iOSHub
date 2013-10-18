@@ -30,7 +30,7 @@
     self.mapView = [[MKMapView alloc] initWithFrame:self.view.bounds];
     
     // set map type as satellite/Hybrid/Standard
-    self.mapView.mapType = MKMapTypeHybrid;
+    self.mapView.mapType = MKMapTypeStandard;
     
     self.mapView.showsUserLocation = YES;
     self.mapView.scrollEnabled = YES;
@@ -68,23 +68,33 @@
 
 #pragma mark CLLocationManagerDelegate
 
-- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
+//- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
+//{
+//    // print the newe location
+//    //NSLog(@"Location Latitude = %f", locations)
+//    
+//    CLLocation * currentLocation = [locations objectAtIndex:[locations count] - 1];
+//    
+//    NSLog(@"Location Latitude = %f, Longitude = %f", currentLocation.coordinate.latitude, currentLocation.coordinate.longitude);
+//    
+//    // update the location info
+//    MKCoordinateSpan span;
+//    span.latitudeDelta = 0.005;
+//    span.longitudeDelta = 0.005;
+//    
+//    MKCoordinateRegion region = MKCoordinateRegionMake(currentLocation.coordinate, span);
+//    
+//    [self.mapView setRegion:region animated:YES];
+//    
+//}
+
+-(void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
 {
-    // print the newe location
-    //NSLog(@"Location Latitude = %f", locations)
+    // log current position
+    NSLog(@"Current Position(%f, %f)", userLocation.coordinate.latitude, userLocation.coordinate.longitude);
     
-    CLLocation * currentLocation = [locations objectAtIndex:[locations count] - 1];
-    
-    NSLog(@"Location Latitude = %f, Longitude = %f", currentLocation.coordinate.latitude, currentLocation.coordinate.longitude);
-    
-    // update the location info
-    MKCoordinateSpan span;
-    span.latitudeDelta = 0.005;
-    span.longitudeDelta = 0.005;
-    
-    MKCoordinateRegion region = MKCoordinateRegionMake(currentLocation.coordinate, span);
-    
-    [self.mapView setRegion:region animated:YES];
+    MKCoordinateRegion currentRegion = MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 500, 500);
+    [self.mapView setRegion:currentRegion animated:YES];
 }
 
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
