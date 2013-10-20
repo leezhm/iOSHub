@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		371FAB8518082963008FED97 /* SKGameOverScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 371FAB8418082963008FED97 /* SKGameOverScene.m */; };
 		7F0C6014180703700008FACC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F0C6013180703700008FACC /* Foundation.framework */; };
 		7F0C6016180703700008FACC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F0C6015180703700008FACC /* CoreGraphics.framework */; };
 		7F0C6018180703700008FACC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F0C6017180703700008FACC /* UIKit.framework */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		371FAB8318082963008FED97 /* SKGameOverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKGameOverScene.h; sourceTree = "<group>"; };
+		371FAB8418082963008FED97 /* SKGameOverScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKGameOverScene.m; sourceTree = "<group>"; };
 		7F0C6010180703700008FACC /* SpriteKitGameSample1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpriteKitGameSample1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F0C6013180703700008FACC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7F0C6015180703700008FACC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -55,7 +58,7 @@
 		7F0C602A180703700008FACC /* SKGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKGViewController.h; sourceTree = "<group>"; };
 		7F0C602B180703700008FACC /* SKGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKGViewController.m; sourceTree = "<group>"; };
 		7F0C602D180703700008FACC /* SKGMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKGMyScene.h; sourceTree = "<group>"; };
-		7F0C602E180703700008FACC /* SKGMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKGMyScene.m; sourceTree = "<group>"; };
+		7F0C602E180703700008FACC /* SKGMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SKGMyScene.m; sourceTree = "<group>"; };
 		7F0C6030180703700008FACC /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		7F0C6032180703700008FACC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7F0C6038180703700008FACC /* SpriteKitGameSample1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpriteKitGameSample1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,6 +139,8 @@
 				7F0C602D180703700008FACC /* SKGMyScene.h */,
 				7F0C602E180703700008FACC /* SKGMyScene.m */,
 				7F0C6030180703700008FACC /* Spaceship.png */,
+				371FAB8318082963008FED97 /* SKGameOverScene.h */,
+				371FAB8418082963008FED97 /* SKGameOverScene.m */,
 				7F0C6032180703700008FACC /* Images.xcassets */,
 				7F0C601C180703700008FACC /* Supporting Files */,
 			);
@@ -291,6 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				371FAB8518082963008FED97 /* SKGameOverScene.m in Sources */,
 				7F0C602F180703700008FACC /* SKGMyScene.m in Sources */,
 				7F0C6026180703700008FACC /* SKGAppDelegate.m in Sources */,
 				7F0C6022180703700008FACC /* main.m in Sources */,
@@ -505,6 +511,7 @@
 				7F0C604B180703700008FACC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7F0C604C180703700008FACC /* Build configuration list for PBXNativeTarget "SpriteKitGameSample1Tests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +520,7 @@
 				7F0C604E180703700008FACC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
