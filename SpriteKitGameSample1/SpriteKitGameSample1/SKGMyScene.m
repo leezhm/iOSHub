@@ -67,4 +67,32 @@
     /* Called before each frame is rendered */
 }
 
+
+- (void)addMonster {
+    
+    // create sprite
+    SKSpriteNode * monster = [SKSpriteNode spriteNodeWithImageNamed:@"monster"];
+    
+    // determine where to spawn the monster alone the Y axis
+    int minY = monster.size.height / 2.0f;
+    int maxY = self.frame.size.height - minY;
+    int rangeY = maxY -minY;
+    int actualY = (arc4random() % rangeY) + minY;
+    
+    // create the monster
+    monster.position = CGPointMake(self.frame.size.width + monster.size.width / 2.0f, actualY);
+    [self addChild:monster];
+    
+    // determine speed of the monster
+    int minDuration = 2.0f;
+    int maxDuration = 4.0f;
+    int rangeDuration = maxDuration - minDuration;
+    int actualDuration = (arc4random() % rangeDuration) + minDuration;
+    
+    // create the actions
+    SKAction * actionMove = [SKAction moveTo:CGPointMake(-monster.size.width / 2.0f, actualY) duration:actualDuration];
+    SKAction * actionMoveDone = [SKAction removeFromParent];
+    [monster runAction:[SKAction sequence:@[actionMove, actionMoveDone]]];
+}
+
 @end
