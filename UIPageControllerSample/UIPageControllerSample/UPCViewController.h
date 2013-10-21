@@ -10,4 +10,8 @@
 
 @interface UPCViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
+
+@property (strong, nonatomic) IBOutlet UIPageControl *pageController;
+
 @end
