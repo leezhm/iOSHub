@@ -26,4 +26,37 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    UIViewController * viewController = [self.childViewControllers objectAtIndex:self.pageController.currentPage];
+    
+    if (nil != viewController.view.superview) {
+        [viewController viewDidAppear:animated];
+    }
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    UIViewController * viewController = [self.childViewControllers objectAtIndex:self.pageController.currentPage];
+    
+    if (nil != viewController.view.superview) {
+        [viewController viewWillDisappear:animated];
+    }
+    
+    [super viewWillDisappear:animated];
+}
+
+- (void)viewDidDisappear:(BOOL)animated
+{
+    UIViewController * viewController = [self.childViewControllers objectAtIndex:self.pageController.currentPage];
+    
+    if (nil != viewController.view.superview) {
+        [viewController viewWillDisappear:animated];
+    }
+    
+    [super viewDidDisappear:animated];
+}
+
 @end
