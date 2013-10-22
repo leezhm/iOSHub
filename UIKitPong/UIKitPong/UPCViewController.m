@@ -10,6 +10,12 @@
 
 @interface UPCViewController ()
 
+@property (nonatomic, strong) UIDynamicAnimator * animator;
+@property (nonatomic, strong) UIGravityBehavior * gravity;
+@property (nonatomic, strong) UICollisionBehavior * collision;
+
+@property (nonatomic, strong) UIView * square;
+
 @end
 
 @implementation UPCViewController
@@ -18,6 +24,23 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    // create a rectangle
+    self.square = [[UIView alloc] initWithFrame:CGRectMake(110, 55, 100, 100)];
+    self.square.backgroundColor = [UIColor redColor];
+    [self.view addSubview:self.square];
+    
+    // UIDynamicAnimator
+    self.animator = [[UIDynamicAnimator alloc] initWithReferenceView:self.view];
+    
+    // Set the gravity attribute
+    self.gravity = [[UIGravityBehavior alloc] initWithItems: @[self.square]];
+    [self.animator addBehavior:self.gravity];
+    
+    // Set the collision attribute
+    self.collision = [[UICollisionBehavior alloc] initWithItems:@[self.square]];
+    self.collision.translatesReferenceBoundsIntoBoundary = YES;
+    [self.animator addBehavior:self.collision];
 }
 
 - (void)didReceiveMemoryWarning
