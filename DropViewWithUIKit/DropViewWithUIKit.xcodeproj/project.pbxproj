@@ -21,6 +21,7 @@
 		37D0E0D41816998200F6ED9D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D0E0B61816998200F6ED9D /* UIKit.framework */; };
 		37D0E0DC1816998200F6ED9D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 37D0E0DA1816998200F6ED9D /* InfoPlist.strings */; };
 		37D0E0DE1816998200F6ED9D /* DropViewWithUIKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D0E0DD1816998200F6ED9D /* DropViewWithUIKitTests.m */; };
+		37D0E0E91816AD3B00F6ED9D /* DropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D0E0E81816AD3B00F6ED9D /* DropView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		37D0E0D91816998200F6ED9D /* DropViewWithUIKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DropViewWithUIKitTests-Info.plist"; sourceTree = "<group>"; };
 		37D0E0DB1816998200F6ED9D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		37D0E0DD1816998200F6ED9D /* DropViewWithUIKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DropViewWithUIKitTests.m; sourceTree = "<group>"; };
+		37D0E0E71816AD3B00F6ED9D /* DropView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropView.h; sourceTree = "<group>"; };
+		37D0E0E81816AD3B00F6ED9D /* DropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				37D0E0C81816998200F6ED9D /* ViewController.m */,
 				37D0E0CA1816998200F6ED9D /* Images.xcassets */,
 				37D0E0B91816998200F6ED9D /* Supporting Files */,
+				37D0E0E71816AD3B00F6ED9D /* DropView.h */,
+				37D0E0E81816AD3B00F6ED9D /* DropView.m */,
 			);
 			path = DropViewWithUIKit;
 			sourceTree = "<group>";
@@ -250,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37D0E0C91816998200F6ED9D /* ViewController.m in Sources */,
+				37D0E0E91816AD3B00F6ED9D /* DropView.m in Sources */,
 				37D0E0C31816998200F6ED9D /* AppDelegate.m in Sources */,
 				37D0E0BF1816998200F6ED9D /* main.m in Sources */,
 			);
