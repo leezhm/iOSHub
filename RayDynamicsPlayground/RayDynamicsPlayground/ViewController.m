@@ -36,6 +36,11 @@
     // set UIKit and Gravity
     self.animator = [[UIDynamicAnimator alloc] initWithReferenceView:self.view];
     self.gravity = [[UIGravityBehavior alloc] initWithItems:@[square]];
+    
+    self.gravity.action = ^ {
+        NSLog(@"%@, %@", NSStringFromCGAffineTransform(square.transform), NSStringFromCGPoint(square.center));
+    };
+    
     [self.animator addBehavior:self.gravity];
     
     // add the collision
@@ -54,6 +59,11 @@
     // set the collision delegate
     self.collision.collisionDelegate = self;
     
+    // set elasticity
+    UIDynamicItemBehavior * itemBehavior = [[UIDynamicItemBehavior alloc] initWithItems:@[square]];
+    itemBehavior.elasticity = 0.8;
+    [self.animator addBehavior:itemBehavior];
+    
     [self.animator addBehavior:self.collision];
 }
 
@@ -70,7 +80,7 @@
     UIView * view = (UIView *)item;
     view.backgroundColor = [UIColor yellowColor];
     
-    [UIView  animateWithDuration:0.3 animations:^{
+    [UIView  animateWithDuration:1 animations:^{
         view.backgroundColor = [UIColor redColor];
     }];
 }
