@@ -29,7 +29,7 @@
     [self.view addSubview:square];
     
     // add barrier
-    UIView * barrier = [[UIView alloc] initWithFrame:CGRectMake(0, 300, 150, 20)];
+    UIView * barrier = [[UIView alloc] initWithFrame:CGRectMake(0, 300, 120, 20)];
     barrier.backgroundColor = [UIColor grayColor];
     [self.view addSubview:barrier];
     
@@ -39,8 +39,14 @@
     [self.animator addBehavior:self.gravity];
     
     // add the collision
-    self.collision = [[UICollisionBehavior alloc] initWithItems:@[square, barrier]];
+    self.collision = [[UICollisionBehavior alloc] initWithItems:@[square]];
     self.collision.translatesReferenceBoundsIntoBoundary = YES;
+    
+    // set collision
+    CGPoint rightEdge = CGPointMake(barrier.frame.origin.x + barrier.frame.size.width,
+                                    barrier.frame.origin.y);
+    [self.collision addBoundaryWithIdentifier:@"barrier" fromPoint:barrier.frame.origin toPoint:rightEdge];
+    
     [self.animator addBehavior:self.collision];
 }
 
