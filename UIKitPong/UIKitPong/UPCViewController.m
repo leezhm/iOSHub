@@ -41,6 +41,11 @@
     self.collision = [[UICollisionBehavior alloc] initWithItems:@[self.square]];
     self.collision.translatesReferenceBoundsIntoBoundary = YES;
     [self.animator addBehavior:self.collision];
+    
+    // Set the elasticity
+    UIDynamicItemBehavior * elasticityBehavior = [[UIDynamicItemBehavior alloc] initWithItems:@[self.square]];
+    elasticityBehavior.elasticity = 0.75;
+    [self.animator addBehavior:elasticityBehavior];
 }
 
 - (void)didReceiveMemoryWarning
