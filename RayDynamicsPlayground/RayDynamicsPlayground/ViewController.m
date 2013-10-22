@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController () <UICollisionBehaviorDelegate>
 
 @property (nonatomic, strong) UIDynamicAnimator * animator;
 @property (nonatomic, strong) UIGravityBehavior * gravity;
@@ -47,6 +47,13 @@
                                     barrier.frame.origin.y);
     [self.collision addBoundaryWithIdentifier:@"barrier" fromPoint:barrier.frame.origin toPoint:rightEdge];
     
+    self.collision.action = ^{
+        //NSLog(@"%@, %@", NSStringFromCGAffineTransform(square.transform), NSStringFromCGPoint(square.center));
+    };
+    
+    // set the collision delegate
+    self.collision.collisionDelegate = self;
+    
     [self.animator addBehavior:self.collision];
 }
 
@@ -54,6 +61,18 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)collisionBehavior:(UICollisionBehavior *)behavior beganContactForItem:(id<UIDynamicItem>)item withBoundaryIdentifier:(id<NSCopying>)identifier atPoint:(CGPoint)p
+{
+    NSLog(@"Boundary contract occurred - %@", identifier);
+    
+    UIView * view = (UIView *)item;
+    view.backgroundColor = [UIColor yellowColor];
+    
+    [UIView  animateWithDuration:0.3 animations:^{
+        view.backgroundColor = [UIColor redColor];
+    }];
 }
 
 @end
