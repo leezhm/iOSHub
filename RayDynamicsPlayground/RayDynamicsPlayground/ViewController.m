@@ -12,6 +12,7 @@
 
 @property (nonatomic, strong) UIDynamicAnimator * animator;
 @property (nonatomic, strong) UIGravityBehavior * gravity;
+@property (nonatomic, strong) UICollisionBehavior * collision;
 
 @end
 
@@ -31,6 +32,11 @@
     self.animator = [[UIDynamicAnimator alloc] initWithReferenceView:self.view];
     self.gravity = [[UIGravityBehavior alloc] initWithItems:@[square]];
     [self.animator addBehavior:self.gravity];
+    
+    // add the collision
+    self.collision = [[UICollisionBehavior alloc] initWithItems:@[square]];
+    self.collision.translatesReferenceBoundsIntoBoundary = YES;
+    [self.animator addBehavior:self.collision];
 }
 
 - (void)didReceiveMemoryWarning
