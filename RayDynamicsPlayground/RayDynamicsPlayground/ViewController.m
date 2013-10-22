@@ -10,6 +10,9 @@
 
 @interface ViewController ()
 
+@property (nonatomic, strong) UIDynamicAnimator * animator;
+@property (nonatomic, strong) UIGravityBehavior * gravity;
+
 @end
 
 @implementation ViewController
@@ -18,6 +21,16 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    // add a UIView to current view
+    UIView * square = [[UIView alloc] initWithFrame:CGRectMake(100, 60, 100, 100)];
+    square.backgroundColor = [UIColor redColor];
+    [self.view addSubview:square];
+    
+    // set UIKit and Gravity
+    self.animator = [[UIDynamicAnimator alloc] initWithReferenceView:self.view];
+    self.gravity = [[UIGravityBehavior alloc] initWithItems:@[square]];
+    [self.animator addBehavior:self.gravity];
 }
 
 - (void)didReceiveMemoryWarning
