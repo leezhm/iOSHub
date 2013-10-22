@@ -37,8 +37,24 @@
     self.animator = [[UIDynamicAnimator alloc] initWithReferenceView:self.view];
     self.gravity = [[UIGravityBehavior alloc] initWithItems:@[square]];
     
+    __weak typeof(self) weakSelf = self;
+    
+    __block int count = 1;
+    
     self.gravity.action = ^ {
-        NSLog(@"%@, %@", NSStringFromCGAffineTransform(square.transform), NSStringFromCGPoint(square.center));
+        
+        if (10 > count) {
+            count ++;
+        } else {
+            
+            count = 1;
+            
+  //        NSLog(@"%@, %@", NSStringFromCGAffineTransform(square.transform), NSStringFromCGPoint(square.center));
+            UIImage * img = [UIImage imageNamed:@"StrokeRectangle"];
+            UIImageView * imgView = [[UIImageView alloc] initWithImage:img];
+            [imgView setFrame:CGRectMake(square.center.x - 50, square.center.y - 50, 100, 100)];
+            [weakSelf.view addSubview:imgView];
+        }
     };
     
     [self.animator addBehavior:self.gravity];
