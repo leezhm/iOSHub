@@ -21,6 +21,7 @@
 		3761470D1815292600E9A769 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 376146EF1815292600E9A769 /* UIKit.framework */; };
 		376147151815292600E9A769 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 376147131815292600E9A769 /* InfoPlist.strings */; };
 		376147171815292600E9A769 /* UIKitPongTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 376147161815292600E9A769 /* UIKitPongTests.m */; };
+		37D0E0A518167C7800F6ED9D /* UPCCustomAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D0E0A418167C7800F6ED9D /* UPCCustomAnimator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		376147121815292600E9A769 /* UIKitPongTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UIKitPongTests-Info.plist"; sourceTree = "<group>"; };
 		376147141815292600E9A769 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		376147161815292600E9A769 /* UIKitPongTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIKitPongTests.m; sourceTree = "<group>"; };
+		37D0E0A318167C7800F6ED9D /* UPCCustomAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPCCustomAnimator.h; sourceTree = "<group>"; };
+		37D0E0A418167C7800F6ED9D /* UPCCustomAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPCCustomAnimator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				376147011815292600E9A769 /* UPCViewController.m */,
 				376147031815292600E9A769 /* Images.xcassets */,
 				376146F21815292600E9A769 /* Supporting Files */,
+				37D0E0A318167C7800F6ED9D /* UPCCustomAnimator.h */,
+				37D0E0A418167C7800F6ED9D /* UPCCustomAnimator.m */,
 			);
 			path = UIKitPong;
 			sourceTree = "<group>";
@@ -250,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37D0E0A518167C7800F6ED9D /* UPCCustomAnimator.m in Sources */,
 				376147021815292600E9A769 /* UPCViewController.m in Sources */,
 				376146F81815292600E9A769 /* main.m in Sources */,
 				376146FC1815292600E9A769 /* UPCAppDelegate.m in Sources */,
@@ -461,6 +467,7 @@
 				3761471C1815292600E9A769 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3761471D1815292600E9A769 /* Build configuration list for PBXNativeTarget "UIKitPongTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +476,7 @@
 				3761471F1815292600E9A769 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,6 +8,8 @@
 
 #import "UPCViewController.h"
 
+#import "UPCCustomAnimator.h"
+
 @interface UPCViewController ()
 
 @property (nonatomic, strong) UIDynamicAnimator * animator;
@@ -33,19 +35,23 @@
     // UIDynamicAnimator
     self.animator = [[UIDynamicAnimator alloc] initWithReferenceView:self.view];
     
-    // Set the gravity attribute
-    self.gravity = [[UIGravityBehavior alloc] initWithItems: @[self.square]];
-    [self.animator addBehavior:self.gravity];
+//    // Set the gravity attribute
+//    self.gravity = [[UIGravityBehavior alloc] initWithItems: @[self.square]];
+//    [self.animator addBehavior:self.gravity];
+//    
+//    // Set the collision attribute
+//    self.collision = [[UICollisionBehavior alloc] initWithItems:@[self.square]];
+//    self.collision.translatesReferenceBoundsIntoBoundary = YES;
+//    [self.animator addBehavior:self.collision];
+//    
+//    // Set the elasticity
+//    UIDynamicItemBehavior * elasticityBehavior = [[UIDynamicItemBehavior alloc] initWithItems:@[self.square]];
+//    elasticityBehavior.elasticity = 0.75;
+//    [self.animator addBehavior:elasticityBehavior];
     
-    // Set the collision attribute
-    self.collision = [[UICollisionBehavior alloc] initWithItems:@[self.square]];
-    self.collision.translatesReferenceBoundsIntoBoundary = YES;
-    [self.animator addBehavior:self.collision];
+    UPCCustomAnimator * behavior = [[UPCCustomAnimator alloc] initWithItem:@[self.square]];
     
-    // Set the elasticity
-    UIDynamicItemBehavior * elasticityBehavior = [[UIDynamicItemBehavior alloc] initWithItems:@[self.square]];
-    elasticityBehavior.elasticity = 0.75;
-    [self.animator addBehavior:elasticityBehavior];
+    [self.animator addBehavior:behavior];
 }
 
 - (void)didReceiveMemoryWarning
