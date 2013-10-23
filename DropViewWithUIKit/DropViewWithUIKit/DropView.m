@@ -14,6 +14,8 @@
 
 @property (nonatomic, strong) UIDynamicAnimator * animator;
 
+@property (nonatomic, strong) UIView * dropView;
+
 @end
 
 @implementation DropView
@@ -24,23 +26,26 @@
     if (self) {
         // Initialization code
         
+        // Assume the view is offscreen. Use a Snap behaviour to position it in the center of the screen.
+        UIWindow *keyWindow = [[UIApplication sharedApplication] keyWindow];
+        
+        // set the whole view frame
+        self.frame = keyWindow.bounds;
+        NSLog(@"The whole view bounds %@", NSStringFromCGRect(self.frame));
+        
         // load a image
         UIImage * img = [UIImage imageNamed:@"Introduction"];
         
-        // set bounds
-        self.frame = CGRectMake(0, 0, img.size.width, img.size.height);
-        self.bounds = self.frame;
-        
+        // set drop view
+        self.dropView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, img.size.width, img.size.height)];
+    
         // set the background
-        self.backgroundColor = [[UIColor alloc] initWithPatternImage:img];
+        self.dropView.backgroundColor = [[UIColor alloc] initWithPatternImage:img];
         
-        NSLog(@"Self Bounds %@", NSStringFromCGRect(self.bounds));
+        [self addSubview:self.dropView];
         
         // init the UIKit
-        self.animator = [[UIDynamicAnimator alloc] initWithReferenceView:self.superview];
-        
-        // Assume the view is offscreen. Use a Snap behaviour to position it in the center of the screen.
-        UIWindow *keyWindow = [[UIApplication sharedApplication] keyWindow];
+        self.animator = [[UIDynamicAnimator alloc] initWithReferenceView:self];
         
         // Adjust our keyWindow's tint adjustment mode to make everything behind the alert view dimmed
         keyWindow.tintAdjustmentMode = UIViewTintAdjustmentModeDimmed;
@@ -64,23 +69,16 @@
     UIWindow *keyWindow = [[UIApplication sharedApplication] keyWindow];
     
     [keyWindow addSubview:self];
-    
-    // Adjust our keyWindow's tint adjustment mode to make everything behind the alert view dimmed
-    keyWindow.tintAdjustmentMode = UIViewTintAdjustmentModeDimmed;
-    [keyWindow tintColorDidChange];
-    
-    NSLog(@"Key Window %@, Description : %@", NSStringFromCGRect(self.frame), keyWindow.description);
-    
+
     // Animate in the background blind
-    
-    self.alpha = 0.0f;
+    self.dropView.alpha = 0.0f;
     [UIView animateWithDuration:0.1f animations:^{
-        self.alpha = 1.0f;
+        self.dropView.alpha = 1.0f;
         NSLog(@"alpha = %f", self.alpha);
     }];
     
     // Use UIKit Dynamics to make the alertView appear.
-    UISnapBehavior *snapBehaviour = [[UISnapBehavior alloc] initWithItem:self snapToPoint:keyWindow.center];
+    UISnapBehavior *snapBehaviour = [[UISnapBehavior alloc] initWithItem:self.dropView snapToPoint:keyWindow.center];
     snapBehaviour.damping = 0.45f;
     [self.animator addBehavior:snapBehaviour];
 }
@@ -93,17 +91,17 @@
     
     [self.animator removeAllBehaviors];
     
-    UIGravityBehavior *gravityBehaviour = [[UIGravityBehavior alloc] initWithItems:@[self]];
+    UIGravityBehavior *gravityBehaviour = [[UIGravityBehavior alloc] initWithItems:@[self.dropView]];
     gravityBehaviour.gravityDirection = CGVectorMake(0.0f, 12.0f);
     [self.animator addBehavior:gravityBehaviour];
     
-    UIDynamicItemBehavior *itemBehaviour = [[UIDynamicItemBehavior alloc] initWithItems:@[self]];
+    UIDynamicItemBehavior *itemBehaviour = [[UIDynamicItemBehavior alloc] initWithItems:@[self.dropView]];
     [itemBehaviour addAngularVelocity:-M_PI_2 forItem:self];
     [self.animator addBehavior:itemBehaviour];
     
     // Animate out our background blind
     [UIView animateWithDuration:0.8f animations:^{
-        self.alpha = 0.0f;
+        self.dropView.alpha = 0.0f;
         keyWindow.tintAdjustmentMode = UIViewTintAdjustmentModeAutomatic;
         [keyWindow tintColorDidChange];
     } completion:^(BOOL finished) {
@@ -116,8 +114,14 @@
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    [self dissView];
-    NSLog(@"event : %@", event.description);
+    UITouch * touch = [[event allTouches] anyObject];
+    
+    CGPoint point = [touch locationInView:self];
+
+    if (CGRectContainsPoint(self.dropView.frame, point)) {
+        NSLog(@"touch the drop view");
+        [self dissView];
+    }
 }
 
 @end
