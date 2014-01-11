@@ -27,7 +27,7 @@
     self.pageViewController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
     
     self.pageViewController.dataSource = self;
-    [self.pageViewController.view setFrame:CGRectMake(0, 20, 320, 524)];
+    [self.pageViewController.view setFrame:CGRectMake(0, 100, 320, 424)];
     
     PVCPageViewController * initViewController = [self viewControllerAtIndex:0];
     

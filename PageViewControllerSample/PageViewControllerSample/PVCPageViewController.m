@@ -32,7 +32,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    //[self.view setFrame:CGRectMake(0, 80, 320, 524)];
+    [self.view setBackgroundColor:[UIColor yellowColor]];
+    //[self.view setFrame:CGRectMake(100, 100, 320, 320)];
 }
 
 - (void)didReceiveMemoryWarning
